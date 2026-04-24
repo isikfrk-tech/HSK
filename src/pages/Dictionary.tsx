@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { allWords } from '../data';
-import { Word } from '../types';
+import type { Word } from '../types';
 import { STUDENT, IMAGES } from '../config/character';
 
 const levelColors: Record<string, string> = {

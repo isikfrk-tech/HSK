@@ -1,4 +1,4 @@
-import { Page, HSKLevel } from '../types';
+import type { Page, HSKLevel } from '../types';
 import { wordsByLevel } from '../data';
 import { useProgress } from '../hooks/useProgress';
 import { STUDENT, getHomeImage, getHomeMessage } from '../config/character';

@@ -1,4 +1,4 @@
-import { Word } from '../types';
+import type { Word } from '../types';
 
 export const hsk4Words: Word[] = [
   { id: 'h4_001', chinese: '爱好', pinyin: 'àihào', turkish: 'hobi, ilgi alanı', level: 4, examples: [{ chinese: '我的爱好是读书。', pinyin: 'Wǒ de àihào shì dúshū.', turkish: 'Hobim kitap okumak.' }] },

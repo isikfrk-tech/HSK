@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Page, HSKLevel } from './types';
+import type { Page, HSKLevel } from './types';
 import { Navbar } from './components/Navbar';
 import { Home } from './pages/Home';
 import { WordList } from './pages/WordList';

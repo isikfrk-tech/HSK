@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { WordProgress } from '../types';
+import type { WordProgress } from '../types';
 
 const STORAGE_KEY = 'hsk_progress';
 

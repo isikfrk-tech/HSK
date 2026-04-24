@@ -1,7 +1,7 @@
 import { hsk4Words } from './hsk4';
 import { hsk5Words } from './hsk5';
 import { hsk6Words } from './hsk6';
-import { Word } from '../types';
+import type { Word } from '../types';
 
 export const allWords: Word[] = [...hsk4Words, ...hsk5Words, ...hsk6Words];
 

@@ -1,4 +1,4 @@
-import { Word } from '../types';
+import type { Word } from '../types';
 
 export const hsk6Words: Word[] = [
   { id: 'h6_001', chinese: '哀悼', pinyin: 'āidào', turkish: 'yas tutmak, taziye sunmak', level: 6, examples: [{ chinese: '人们哀悼逝去的英雄。', pinyin: 'Rénmen āidào shìqù de yīngxióng.', turkish: 'İnsanlar yitirilen kahramana yas tutuyor.' }] },

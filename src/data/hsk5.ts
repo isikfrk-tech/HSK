@@ -1,4 +1,4 @@
-import { Word } from '../types';
+import type { Word } from '../types';
 
 export const hsk5Words: Word[] = [
   { id: 'h5_001', chinese: '爱护', pinyin: 'àihù', turkish: 'korumak, özen göstermek', level: 5, examples: [{ chinese: '我们要爱护环境。', pinyin: 'Wǒmen yào àihù huánjìng.', turkish: 'Çevreyi korumalıyız.' }] },

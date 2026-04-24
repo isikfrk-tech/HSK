@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { HSKLevel, Word } from '../types';
+import type { HSKLevel, Word } from '../types';
 import { allWords, wordsByLevel } from '../data';
 import { useProgress } from '../hooks/useProgress';
 

@@ -1,4 +1,4 @@
-import { Page } from '../types';
+import type { Page } from '../types';
 import { STUDENT } from '../config/character';
 
 interface NavbarProps {
