@@ -6,6 +6,7 @@ import { WordList } from './pages/WordList';
 import { Flashcard } from './pages/Flashcard';
 import { Quiz } from './pages/Quiz';
 import { Dictionary } from './pages/Dictionary';
+import { Exercise } from './pages/Exercise';
 
 function App() {
   const [page, setPage] = useState<Page>('home');
@@ -26,6 +27,7 @@ function App() {
         {page === 'flashcard' && <Flashcard initialLevel={selectedLevel} />}
         {page === 'quiz' && <Quiz initialLevel={selectedLevel} />}
         {page === 'dictionary' && <Dictionary />}
+        {page === 'exercise' && <Exercise />}
       </main>
     </div>
   );

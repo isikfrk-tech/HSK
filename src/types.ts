@@ -24,4 +24,4 @@ export interface WordProgress {
   nextReview: number;
 }
 
-export type Page = 'home' | 'words' | 'flashcard' | 'quiz' | 'dictionary';
+export type Page = 'home' | 'words' | 'flashcard' | 'quiz' | 'dictionary' | 'exercise';

@@ -11,6 +11,7 @@ const navItems: { page: Page; label: string; icon: string }[] = [
   { page: 'flashcard',  label: 'Flashcard', icon: '🃏' },
   { page: 'quiz',       label: 'Quiz',      icon: '✏️' },
   { page: 'dictionary', label: 'Sözlük',    icon: '🔍' },
+  { page: 'exercise',   label: 'Alıştırma', icon: '✍️' },
 ];
 
 export function Navbar({ currentPage, onNavigate }: NavbarProps) {
