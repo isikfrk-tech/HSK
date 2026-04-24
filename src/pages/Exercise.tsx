@@ -1,7 +1,10 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import type { HSKLevel, Word } from '../types';
 import { allWords, wordsByLevel } from '../data';
+import { useProgress } from '../hooks/useProgress';
 import { STUDENT } from '../config/character';
+
+type WordFilter = 'all' | 'known';
 
 type Status = 'idle' | 'correct' | 'wrong' | 'revealed';
 
@@ -42,7 +45,9 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 export function Exercise() {
+  const { progress } = useProgress();
   const [level, setLevel] = useState<HSKLevel | 'all'>('all');
+  const [wordFilter, setWordFilter] = useState<WordFilter>('all');
   const [started, setStarted] = useState(false);
   const [queue, setQueue] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
@@ -53,8 +58,14 @@ export function Exercise() {
   const [showHint, setShowHint] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
+  const knownCount = (level === 'all' ? allWords : wordsByLevel[level as HSKLevel])
+    .filter(w => progress[w.id]?.known).length;
+
   const buildQueue = useCallback(() => {
-    const pool = level === 'all' ? allWords : wordsByLevel[level];
+    const levelPool = level === 'all' ? allWords : wordsByLevel[level as HSKLevel];
+    const pool = wordFilter === 'known'
+      ? levelPool.filter(w => progress[w.id]?.known)
+      : levelPool;
     const questions = shuffle(
       pool.flatMap(w => {
         const q = buildQuestion(w);
@@ -67,7 +78,7 @@ export function Exercise() {
     setInput('');
     setStatus('idle');
     setStarted(true);
-  }, [level]);
+  }, [level, wordFilter, progress]);
 
   const current = queue[index];
   const finished = started && index >= queue.length;
@@ -122,7 +133,9 @@ export function Exercise() {
           Cümlede eksik Çince kelimeyi yaz. {STUDENT.name}, hazır mısın？
         </p>
 
-        <div className="flex gap-2 justify-center mb-8">
+        {/* Seviye seçimi */}
+        <p className="text-xs text-gray-400 uppercase tracking-wide mb-2">Seviye</p>
+        <div className="flex gap-2 justify-center mb-6">
           {(['all', 4, 5, 6] as const).map(l => (
             <button
               key={l}
@@ -138,9 +151,46 @@ export function Exercise() {
           ))}
         </div>
 
+        {/* Kelime filtresi */}
+        <p className="text-xs text-gray-400 uppercase tracking-wide mb-2">Kelimeler</p>
+        <div className="flex gap-2 justify-center mb-8">
+          <button
+            onClick={() => setWordFilter('all')}
+            className={`px-4 py-2 rounded-xl font-semibold text-sm transition-colors ${
+              wordFilter === 'all'
+                ? 'bg-gray-800 text-white'
+                : 'border border-gray-300 text-gray-600 hover:bg-gray-50'
+            }`}
+          >
+            Hepsi
+          </button>
+          <button
+            onClick={() => setWordFilter('known')}
+            className={`px-4 py-2 rounded-xl font-semibold text-sm transition-colors ${
+              wordFilter === 'known'
+                ? 'bg-gray-800 text-white'
+                : 'border border-gray-300 text-gray-600 hover:bg-gray-50'
+            }`}
+          >
+            Çalıştığım Kelimeler
+            {knownCount > 0 && (
+              <span className="ml-1.5 bg-green-100 text-green-700 text-xs px-1.5 py-0.5 rounded-full">
+                {knownCount}
+              </span>
+            )}
+          </button>
+        </div>
+
+        {wordFilter === 'known' && knownCount === 0 && (
+          <p className="text-sm text-amber-600 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-6">
+            Henüz "Öğrendim" işaretlediğin kelime yok. Önce Flashcard veya Quiz çalışmanı tamamla!
+          </p>
+        )}
+
         <button
           onClick={buildQueue}
-          className="bg-red-600 text-white px-8 py-3 rounded-xl font-semibold text-lg hover:bg-red-700 transition-colors"
+          disabled={wordFilter === 'known' && knownCount === 0}
+          className="bg-red-600 text-white px-8 py-3 rounded-xl font-semibold text-lg hover:bg-red-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
         >
           Başla
         </button>
