@@ -50,6 +50,7 @@ export function Exercise() {
   const [status, setStatus] = useState<Status>('idle');
   const [score, setScore] = useState({ correct: 0, wrong: 0 });
   const [showPinyin, setShowPinyin] = useState(false);
+  const [showHint, setShowHint] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const buildQueue = useCallback(() => {
@@ -93,6 +94,7 @@ export function Exercise() {
     setInput('');
     setStatus('idle');
     setShowPinyin(false);
+    setShowHint(false);
   }, []);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -211,12 +213,22 @@ export function Exercise() {
           }`}>
             HSK {current.word.level}
           </span>
-          <button
-            onClick={() => setShowPinyin(p => !p)}
-            className="text-xs text-gray-400 hover:text-red-500 transition-colors"
-          >
-            {showPinyin ? '拼音 ✕' : '拼音 힌트'}
-          </button>
+          {!answered && (
+            <div className="flex gap-2">
+              <button
+                onClick={() => setShowHint(p => !p)}
+                className="text-xs text-gray-400 hover:text-amber-500 transition-colors"
+              >
+                {showHint ? 'İpucu ✕' : '💡 İpucu'}
+              </button>
+              <button
+                onClick={() => setShowPinyin(p => !p)}
+                className="text-xs text-gray-400 hover:text-red-500 transition-colors"
+              >
+                {showPinyin ? '拼音 ✕' : '拼音'}
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Cümle */}
@@ -225,7 +237,7 @@ export function Exercise() {
         </div>
 
         {/* Pinyin */}
-        {showPinyin && (
+        {(showPinyin || answered) && (
           <div className="text-red-400 text-sm text-center mb-1">
             {answered ? current.pinyinFull : current.pinyin}
           </div>
@@ -234,12 +246,14 @@ export function Exercise() {
         {/* Türkçe çeviri */}
         <div className="text-gray-500 text-sm text-center mb-6">{current.translation}</div>
 
-        {/* Türkçe anlam ipucu */}
-        <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-2.5 text-center mb-5">
-          <span className="text-xs text-amber-600 font-medium">Türkçe anlamı: </span>
-          <span className="text-amber-800 font-semibold text-sm">{current.word.turkish}</span>
-          <span className="text-xs text-amber-500 ml-2">({current.word.pinyin})</span>
-        </div>
+        {/* Türkçe anlam ipucu — sadece istenince */}
+        {(showHint || answered) && (
+          <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-2.5 text-center mb-5">
+            <span className="text-xs text-amber-600 font-medium">Türkçe anlamı: </span>
+            <span className="text-amber-800 font-semibold text-sm">{current.word.turkish}</span>
+            <span className="text-xs text-amber-500 ml-2">({current.word.pinyin})</span>
+          </div>
+        )}
 
         {/* Input */}
         <div className="relative mb-4">
