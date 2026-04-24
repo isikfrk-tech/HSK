@@ -266,4 +266,427 @@ export const hsk4Words: Word[] = [
   { id: 'h4_263', chinese: '最好', pinyin: 'zuìhǎo', turkish: 'en iyisi, tercih edilir, tavsiye edilir', level: 4, examples: [{ chinese: '你最好早点去，那里可能会很挤。', pinyin: 'Nǐ zuìhǎo zǎodiǎn qù, nàlǐ kěnéng huì hěn jǐ.', turkish: 'Erkenden gitsen iyi olur, orada çok kalabalık olabilir.' }] },
   { id: 'h4_264', chinese: '社会', pinyin: 'shèhuì', turkish: 'toplum, sosyal', level: 4, examples: [{ chinese: '我们要为社会做贡献。', pinyin: 'Wǒmen yào wèi shèhuì zuò gòngxiàn.', turkish: 'Topluma katkıda bulunmalıyız.' }] },
   { id: 'h4_265', chinese: '确实', pinyin: 'quèshí', turkish: 'gerçekten, doğrusu, hakikaten', level: 4, examples: [{ chinese: '你说得确实有道理。', pinyin: 'Nǐ shuō de quèshí yǒu dàolǐ.', turkish: 'Söylediklerin gerçekten mantıklı.' }] },
+
+  // A
+  { id: 'h4_266', chinese: '爱情', pinyin: 'àiqíng', turkish: 'aşk, romantik sevgi', level: 4, examples: [{ chinese: '他们的爱情故事很感人。', pinyin: 'Tāmen de àiqíng gùshi hěn gǎnrén.', turkish: 'Onların aşk hikayesi çok dokunaklı.' }] },
+  { id: 'h4_267', chinese: '暗', pinyin: 'àn', turkish: 'karanlık, gizli', level: 4, examples: [{ chinese: '天暗了，该回家了。', pinyin: 'Tiān àn le, gāi huíjiā le.', turkish: 'Hava karardı, eve dönme vakti geldi.' }] },
+
+  // B
+  { id: 'h4_268', chinese: '保持', pinyin: 'bǎochí', turkish: 'korumak, sürdürmek, devam ettirmek', level: 4, examples: [{ chinese: '要保持健康，需要多运动。', pinyin: 'Yào bǎochí jiànkāng, xūyào duō yùndòng.', turkish: 'Sağlığı korumak için daha fazla egzersiz yapmak gerekir.' }] },
+  { id: 'h4_269', chinese: '保证', pinyin: 'bǎozhèng', turkish: 'garanti etmek, temin etmek', level: 4, examples: [{ chinese: '我保证按时完成任务。', pinyin: 'Wǒ bǎozhèng ànshí wánchéng rènwù.', turkish: 'Görevi zamanında tamamlayacağımı garanti ediyorum.' }] },
+  { id: 'h4_270', chinese: '必要', pinyin: 'bìyào', turkish: 'gerekli, zorunlu', level: 4, examples: [{ chinese: '做这件事有必要吗？', pinyin: 'Zuò zhè jiàn shì yǒu bìyào ma?', turkish: 'Bu işi yapmak gerekli mi?' }] },
+  { id: 'h4_271', chinese: '避免', pinyin: 'bìmiǎn', turkish: 'kaçınmak, önlemek', level: 4, examples: [{ chinese: '要避免在公共场合大声说话。', pinyin: 'Yào bìmiǎn zài gōnggòng chǎnghé dàshēng shuōhuà.', turkish: 'Kamuya açık yerlerde yüksek sesle konuşmaktan kaçınmalısın.' }] },
+  { id: 'h4_272', chinese: '表格', pinyin: 'biǎogé', turkish: 'form, tablo', level: 4, examples: [{ chinese: '请填写这张表格。', pinyin: 'Qǐng tiánxiě zhè zhāng biǎogé.', turkish: 'Lütfen bu formu doldurun.' }] },
+
+  // C
+  { id: 'h4_273', chinese: '才能', pinyin: 'cáinéng', turkish: 'yetenek, kabiliyet', level: 4, examples: [{ chinese: '她有绘画的才能。', pinyin: 'Tā yǒu huìhuà de cáinéng.', turkish: 'Onun resim yapma yeteneği var.' }] },
+  { id: 'h4_274', chinese: '参考', pinyin: 'cānkǎo', turkish: 'referans almak, başvurmak', level: 4, examples: [{ chinese: '写论文时要参考很多资料。', pinyin: 'Xiě lùnwén shí yào cānkǎo hěn duō zīliào.', turkish: 'Makale yazarken pek çok kaynağa başvurmalısın.' }] },
+  { id: 'h4_275', chinese: '曾经', pinyin: 'céngjīng', turkish: 'bir zamanlar, eskiden', level: 4, examples: [{ chinese: '我曾经在北京住过三年。', pinyin: 'Wǒ céngjīng zài Běijīng zhùguò sān nián.', turkish: 'Bir zamanlar Pekin\'de üç yıl yaşadım.' }] },
+  { id: 'h4_276', chinese: '承认', pinyin: 'chéngrèn', turkish: 'kabul etmek, itiraf etmek', level: 4, examples: [{ chinese: '他承认自己做错了。', pinyin: 'Tā chéngrèn zìjǐ zuò cuò le.', turkish: 'Hata yaptığını kabul etti.' }] },
+  { id: 'h4_277', chinese: '传统', pinyin: 'chuántǒng', turkish: 'gelenek, geleneksel', level: 4, examples: [{ chinese: '春节是中国最重要的传统节日。', pinyin: 'Chūnjié shì Zhōngguó zuì zhòng yào de chuántǒng jiérì.', turkish: 'Çin Yeni Yılı, Çin\'in en önemli geleneksel bayramıdır.' }] },
+  { id: 'h4_278', chinese: '此外', pinyin: 'cǐwài', turkish: 'bunun yanı sıra, ayrıca', level: 4, examples: [{ chinese: '他会说中文，此外还会说日文。', pinyin: 'Tā huì shuō Zhōngwén, cǐwài hái huì shuō Rìwén.', turkish: 'Çince biliyor, bunun yanı sıra Japonca da biliyor.' }] },
+  { id: 'h4_279', chinese: '存在', pinyin: 'cúnzài', turkish: 'var olmak, mevcut olmak', level: 4, examples: [{ chinese: '这个问题已经存在很长时间了。', pinyin: 'Zhège wèntí yǐjīng cúnzài hěn cháng shíjiān le.', turkish: 'Bu sorun çok uzun süredir var.' }] },
+
+  // D
+  { id: 'h4_280', chinese: '打扰', pinyin: 'dǎrǎo', turkish: 'rahatsız etmek', level: 4, examples: [{ chinese: '对不起，打扰您一下。', pinyin: 'Duìbuqǐ, dǎrǎo nín yīxià.', turkish: 'Özür dilerim, sizi biraz rahatsız edeyim.' }] },
+  { id: 'h4_281', chinese: '打招呼', pinyin: 'dǎ zhāohu', turkish: 'selam vermek, merhaba demek', level: 4, examples: [{ chinese: '见到老师要主动打招呼。', pinyin: 'Jiàn dào lǎoshī yào zhǔdòng dǎ zhāohu.', turkish: 'Öğretmeni görünce aktif olarak selam vermelisin.' }] },
+  { id: 'h4_282', chinese: '当地', pinyin: 'dāngdì', turkish: 'yerel, o bölgenin', level: 4, examples: [{ chinese: '去旅游要尊重当地的文化。', pinyin: 'Qù lǚyóu yào zūnzhòng dāngdì de wénhuà.', turkish: 'Seyahate giderken yerel kültüre saygı göstermelisin.' }] },
+  { id: 'h4_283', chinese: '当然', pinyin: 'dāngrán', turkish: 'tabii ki, elbette, doğal olarak', level: 4, examples: [{ chinese: '你能来参加吗？当然可以！', pinyin: 'Nǐ néng lái cānjiā ma? Dāngrán kěyǐ!', turkish: 'Katılabilir misin? Tabii ki!' }] },
+  { id: 'h4_284', chinese: '道理', pinyin: 'dàolǐ', turkish: 'mantık, neden, fikir', level: 4, examples: [{ chinese: '你说的道理我明白。', pinyin: 'Nǐ shuō de dàolǐ wǒ míngbai.', turkish: 'Söylediğin mantığı anlıyorum.' }] },
+  { id: 'h4_285', chinese: '丢', pinyin: 'diū', turkish: 'kaybetmek, düşürmek, bırakmak', level: 4, examples: [{ chinese: '我把手机丢在出租车上了。', pinyin: 'Wǒ bǎ shǒujī diū zài chūzūchē shàng le.', turkish: 'Telefonumu taksiye bıraktım.' }] },
+  { id: 'h4_286', chinese: '对比', pinyin: 'duìbǐ', turkish: 'karşılaştırmak, zıtlık', level: 4, examples: [{ chinese: '把这两幅画对比一下。', pinyin: 'Bǎ zhè liǎng fú huà duìbǐ yīxià.', turkish: 'Bu iki resmi bir karşılaştır.' }] },
+  { id: 'h4_287', chinese: '大方', pinyin: 'dàfāng', turkish: 'cömert, doğal, çekinmez', level: 4, examples: [{ chinese: '她说话很大方，不紧张。', pinyin: 'Tā shuōhuà hěn dàfāng, bù jǐnzhāng.', turkish: 'Konuşması çok doğal, gergin değil.' }] },
+  { id: 'h4_288', chinese: '答应', pinyin: 'dāying', turkish: 'söz vermek, kabul etmek, cevap vermek', level: 4, examples: [{ chinese: '他答应帮我搬家。', pinyin: 'Tā dāying bāng wǒ bānjiā.', turkish: 'Taşınmama yardım edeceğine söz verdi.' }] },
+
+  // E
+  { id: 'h4_289', chinese: '儿童', pinyin: 'értóng', turkish: 'çocuk (genel)', level: 4, examples: [{ chinese: '这是一本儿童读物。', pinyin: 'Zhè shì yī běn értóng dúwù.', turkish: 'Bu bir çocuk kitabı.' }] },
+
+  // F
+  { id: 'h4_290', chinese: '方向', pinyin: 'fāngxiàng', turkish: 'yön, istikamet', level: 4, examples: [{ chinese: '你往错误的方向走了。', pinyin: 'Nǐ wǎng cuòwù de fāngxiàng zǒu le.', turkish: 'Yanlış yöne gittin.' }] },
+  { id: 'h4_291', chinese: '父母', pinyin: 'fùmǔ', turkish: 'anne-baba, ebeveyn', level: 4, examples: [{ chinese: '要孝顺父母。', pinyin: 'Yào xiàoshùn fùmǔ.', turkish: 'Anne babana saygılı olmalısın.' }] },
+  { id: 'h4_292', chinese: '复杂', pinyin: 'fùzá', turkish: 'karmaşık, karışık', level: 4, examples: [{ chinese: '这道题很复杂，我做不出来。', pinyin: 'Zhè dào tí hěn fùzá, wǒ zuò bu chūlái.', turkish: 'Bu soru çok karmaşık, çözemiyorum.' }] },
+  { id: 'h4_293', chinese: '方便', pinyin: 'fāngbiàn', turkish: 'uygun, elverişli, pratik', level: 4, examples: [{ chinese: '坐地铁很方便。', pinyin: 'Zuò dìtiě hěn fāngbiàn.', turkish: 'Metro binmek çok pratik.' }] },
+
+  // G
+  { id: 'h4_294', chinese: '感动', pinyin: 'gǎndòng', turkish: 'duygulanmak, etkilenmek', level: 4, examples: [{ chinese: '这部电影让我很感动。', pinyin: 'Zhè bù diànyǐng ràng wǒ hěn gǎndòng.', turkish: 'Bu film beni çok duygulandırdı.' }] },
+  { id: 'h4_295', chinese: '感激', pinyin: 'gǎnjī', turkish: 'minnetar olmak, şükran duymak', level: 4, examples: [{ chinese: '我非常感激你的帮助。', pinyin: 'Wǒ fēicháng gǎnjī nǐ de bāngzhù.', turkish: 'Yardımın için sana çok minnettarım.' }] },
+  { id: 'h4_296', chinese: '感情', pinyin: 'gǎnqíng', turkish: 'duygu, his, ilişki', level: 4, examples: [{ chinese: '他们之间的感情很深。', pinyin: 'Tāmen zhījiān de gǎnqíng hěn shēn.', turkish: 'Aralarındaki bağ çok derin.' }] },
+  { id: 'h4_297', chinese: '各', pinyin: 'gè', turkish: 'her, çeşitli, her biri', level: 4, examples: [{ chinese: '各国代表出席了会议。', pinyin: 'Gè guó dàibiǎo chūxí le huìyì.', turkish: 'Her ülkenin temsilcileri toplantıya katıldı.' }] },
+  { id: 'h4_298', chinese: '光', pinyin: 'guāng', turkish: 'ışık; sadece, yalnızca', level: 4, examples: [{ chinese: '别光说不做。', pinyin: 'Bié guāng shuō bú zuò.', turkish: 'Sadece konuşma, bir şeyler yap.' }] },
+  { id: 'h4_299', chinese: '广泛', pinyin: 'guǎngfàn', turkish: 'yaygın, geniş kapsamlı', level: 4, examples: [{ chinese: '他的兴趣非常广泛。', pinyin: 'Tā de xìngqù fēicháng guǎngfàn.', turkish: 'Onun ilgi alanları çok geniş.' }] },
+  { id: 'h4_300', chinese: '干燥', pinyin: 'gānzào', turkish: 'kuru, kurak', level: 4, examples: [{ chinese: '北方的冬天又冷又干燥。', pinyin: 'Běifāng de dōngtiān yòu lěng yòu gānzào.', turkish: 'Kuzey\'in kışı hem soğuk hem de kuru.' }] },
+
+  // H
+  { id: 'h4_301', chinese: '害羞', pinyin: 'hàixiū', turkish: 'utanmak, mahçup olmak', level: 4, examples: [{ chinese: '她第一次见面很害羞。', pinyin: 'Tā dì yī cì jiànmiàn hěn hàixiū.', turkish: 'İlk tanışmada çok utangaçtı.' }] },
+  { id: 'h4_302', chinese: '寒假', pinyin: 'hánjià', turkish: 'kış tatili', level: 4, examples: [{ chinese: '寒假我打算回老家。', pinyin: 'Hánjià wǒ dǎsuàn huí lǎojiā.', turkish: 'Kış tatilinde memleketime dönmeyi planlıyorum.' }] },
+  { id: 'h4_303', chinese: '好久', pinyin: 'hǎojiǔ', turkish: 'uzun zamandır, epey süredir', level: 4, examples: [{ chinese: '好久不见，你好吗？', pinyin: 'Hǎojiǔ bú jiàn, nǐ hǎo ma?', turkish: 'Çok uzun zamandır görüşmedik, nasılsın?' }] },
+  { id: 'h4_304', chinese: '合理', pinyin: 'hélǐ', turkish: 'makul, mantıklı, yerinde', level: 4, examples: [{ chinese: '这个价格很合理。', pinyin: 'Zhège jiàgé hěn hélǐ.', turkish: 'Bu fiyat çok makul.' }] },
+  { id: 'h4_305', chinese: '红包', pinyin: 'hóngbāo', turkish: 'kırmızı zarf (para hediyesi)', level: 4, examples: [{ chinese: '过年的时候长辈给孩子发红包。', pinyin: 'Guònián de shíhou zhǎngbèi gěi háizi fā hóngbāo.', turkish: 'Yeni Yıl\'da büyükler çocuklara kırmızı zarf verir.' }] },
+  { id: 'h4_306', chinese: '回答', pinyin: 'huídá', turkish: 'yanıtlamak, cevap vermek', level: 4, examples: [{ chinese: '老师提问，学生积极回答。', pinyin: 'Lǎoshī tíwèn, xuésheng jījí huídá.', turkish: 'Öğretmen soru sordu, öğrenciler aktif olarak cevap verdi.' }] },
+  { id: 'h4_307', chinese: '活跃', pinyin: 'huóyuè', turkish: 'aktif, canlı, enerjik', level: 4, examples: [{ chinese: '他在课堂上非常活跃。', pinyin: 'Tā zài kètáng shàng fēicháng huóyuè.', turkish: 'Sınıfta çok aktif.' }] },
+  { id: 'h4_308', chinese: '后来', pinyin: 'hòulái', turkish: 'sonradan, daha sonra', level: 4, examples: [{ chinese: '他们后来成了好朋友。', pinyin: 'Tāmen hòulái chéng le hǎo péngyou.', turkish: 'Sonradan iyi arkadaş oldular.' }] },
+
+  // J
+  { id: 'h4_309', chinese: '积累', pinyin: 'jīlěi', turkish: 'biriktirmek, toplamak', level: 4, examples: [{ chinese: '学习语言需要日积月累。', pinyin: 'Xuéxí yǔyán xūyào rì jī yuè lěi.', turkish: 'Dil öğrenmek günden güne birikmek gerektirir.' }] },
+  { id: 'h4_310', chinese: '即使', pinyin: 'jíshǐ', turkish: 'bile, -se bile, her ne kadar', level: 4, examples: [{ chinese: '即使很难，我也要坚持。', pinyin: 'Jíshǐ hěn nán, wǒ yě yào jiānchí.', turkish: 'Ne kadar zor olursa olsun, devam edeceğim.' }] },
+  { id: 'h4_311', chinese: '坚强', pinyin: 'jiānqiáng', turkish: 'güçlü, dayanıklı, kararlı', level: 4, examples: [{ chinese: '遇到困难要坚强。', pinyin: 'Yù dào kùnnan yào jiānqiáng.', turkish: 'Zorlukla karşılaştığında güçlü ol.' }] },
+  { id: 'h4_312', chinese: '进步', pinyin: 'jìnbù', turkish: 'ilerleme, gelişme; ilerlemek', level: 4, examples: [{ chinese: '她的中文进步很快。', pinyin: 'Tā de Zhōngwén jìnbù hěn kuài.', turkish: 'Onun Çincesi çok hızlı gelişiyor.' }] },
+  { id: 'h4_313', chinese: '精彩', pinyin: 'jīngcǎi', turkish: 'muhteşem, harika, görkemli', level: 4, examples: [{ chinese: '今天的演出非常精彩。', pinyin: 'Jīntiān de yǎnchū fēicháng jīngcǎi.', turkish: 'Bugünkü gösteri çok muhteşemdi.' }] },
+  { id: 'h4_314', chinese: '决心', pinyin: 'juéxīn', turkish: 'azim, kararlılık; karar vermek', level: 4, examples: [{ chinese: '他下定决心要学好中文。', pinyin: 'Tā xiàdìng juéxīn yào xué hǎo Zhōngwén.', turkish: 'Çinceyi iyi öğrenmeye kesin karar verdi.' }] },
+  { id: 'h4_315', chinese: '尽力', pinyin: 'jìnlì', turkish: 'elinden geleni yapmak, çaba göstermek', level: 4, examples: [{ chinese: '我会尽力完成这项工作。', pinyin: 'Wǒ huì jìnlì wánchéng zhè xiàng gōngzuò.', turkish: 'Bu işi bitirmek için elimden geleni yapacağım.' }] },
+  { id: 'h4_316', chinese: '结合', pinyin: 'jiéhé', turkish: 'birleştirmek, birleşmek', level: 4, examples: [{ chinese: '理论要结合实际。', pinyin: 'Lǐlùn yào jiéhé shíjì.', turkish: 'Teori pratiğe bağlanmalıdır.' }] },
+  { id: 'h4_317', chinese: '具体', pinyin: 'jùtǐ', turkish: 'somut, belirli, ayrıntılı', level: 4, examples: [{ chinese: '请说得具体一点。', pinyin: 'Qǐng shuō de jùtǐ yīdiǎn.', turkish: 'Lütfen biraz daha somut konuş.' }] },
+
+  // K
+  { id: 'h4_318', chinese: '开心', pinyin: 'kāixīn', turkish: 'mutlu, neşeli, keyifli', level: 4, examples: [{ chinese: '孩子们玩得很开心。', pinyin: 'Háizimen wán de hěn kāixīn.', turkish: 'Çocuklar çok mutlu oynadı.' }] },
+  { id: 'h4_319', chinese: '可靠', pinyin: 'kěkào', turkish: 'güvenilir, emin', level: 4, examples: [{ chinese: '他是一个可靠的人。', pinyin: 'Tā shì yīgè kěkào de rén.', turkish: 'O güvenilir biri.' }] },
+  { id: 'h4_320', chinese: '空间', pinyin: 'kōngjiān', turkish: 'alan, boşluk, mekan', level: 4, examples: [{ chinese: '这间房间的空间很大。', pinyin: 'Zhè jiān fángjiān de kōngjiān hěn dà.', turkish: 'Bu odanın alanı çok büyük.' }] },
+
+  // L
+  { id: 'h4_321', chinese: '理想', pinyin: 'lǐxiǎng', turkish: 'ideal, hayal, mükemmel', level: 4, examples: [{ chinese: '她的理想是当一名医生。', pinyin: 'Tā de lǐxiǎng shì dāng yī míng yīshēng.', turkish: 'Onun ideali doktor olmak.' }] },
+  { id: 'h4_322', chinese: '礼貌', pinyin: 'lǐmào', turkish: 'kibarlık, nezaket; kibar', level: 4, examples: [{ chinese: '和长辈说话要有礼貌。', pinyin: 'Hé zhǎngbèi shuōhuà yào yǒu lǐmào.', turkish: 'Büyüklerle konuşurken kibar olmalısın.' }] },
+  { id: 'h4_323', chinese: '理解', pinyin: 'lǐjiě', turkish: 'anlamak, kavramak', level: 4, examples: [{ chinese: '我理解你的感受。', pinyin: 'Wǒ lǐjiě nǐ de gǎnshòu.', turkish: 'Hislerini anlıyorum.' }] },
+  { id: 'h4_324', chinese: '另外', pinyin: 'lìngwài', turkish: 'başka, ayrıca, bundan başka', level: 4, examples: [{ chinese: '另外，我还有一件事要说。', pinyin: 'Lìngwài, wǒ hái yǒu yī jiàn shì yào shuō.', turkish: 'Ayrıca söylemem gereken bir şey daha var.' }] },
+  { id: 'h4_325', chinese: '论文', pinyin: 'lùnwén', turkish: 'makale, tez', level: 4, examples: [{ chinese: '他正在写毕业论文。', pinyin: 'Tā zhèngzài xiě bìyè lùnwén.', turkish: 'Mezuniyet tezini yazıyor.' }] },
+  { id: 'h4_326', chinese: '流泪', pinyin: 'liú lèi', turkish: 'ağlamak, gözyaşı dökmek', level: 4, examples: [{ chinese: '听到这个消息，她流泪了。', pinyin: 'Tīng dào zhège xiāoxi, tā liú lèi le.', turkish: 'Bu haberi duyunca gözyaşı döktü.' }] },
+
+  // M
+  { id: 'h4_327', chinese: '明白', pinyin: 'míngbai', turkish: 'anlamak; açık, net', level: 4, examples: [{ chinese: '你明白我的意思吗？', pinyin: 'Nǐ míngbai wǒ de yìsi ma?', turkish: 'Demek istediğimi anlıyor musun?' }] },
+  { id: 'h4_328', chinese: '目前', pinyin: 'mùqián', turkish: 'şu an, şu sıralar, mevcut', level: 4, examples: [{ chinese: '目前这个问题还没解决。', pinyin: 'Mùqián zhège wèntí hái méi jiějué.', turkish: 'Şu an bu sorun henüz çözülmedi.' }] },
+  { id: 'h4_329', chinese: '马虎', pinyin: 'mǎhu', turkish: 'dikkatsiz, özensiz, ihmalkar', level: 4, examples: [{ chinese: '做事不能太马虎。', pinyin: 'Zuò shì bù néng tài mǎhu.', turkish: 'İş yaparken çok dikkatsiz olmamalısın.' }] },
+
+  // N
+  { id: 'h4_330', chinese: '难得', pinyin: 'nándé', turkish: 'nadir, az rastlanan, değerli', level: 4, examples: [{ chinese: '这样的好天气真难得。', pinyin: 'Zhèyàng de hǎo tiānqì zhēn nándé.', turkish: 'Bu kadar güzel hava gerçekten nadir.' }] },
+  { id: 'h4_331', chinese: '宁愿', pinyin: 'nìngyuàn', turkish: 'tercih etmek, yeğlemek', level: 4, examples: [{ chinese: '我宁愿步行也不愿坐出租车。', pinyin: 'Wǒ nìngyuàn bùxíng yě bù yuàn zuò chūzūchē.', turkish: 'Taksi binmektense yürümeyi tercih ederim.' }] },
+
+  // P
+  { id: 'h4_332', chinese: '平时', pinyin: 'píngshí', turkish: 'normalde, genellikle, sıradan zamanlarda', level: 4, examples: [{ chinese: '平时我都坐公交车上班。', pinyin: 'Píngshí wǒ dōu zuò gōngjiāochē shàngbān.', turkish: 'Normalde işe otobüsle giderim.' }] },
+  { id: 'h4_333', chinese: '皮肤', pinyin: 'pífū', turkish: 'deri, cilt', level: 4, examples: [{ chinese: '她的皮肤很好，白白的。', pinyin: 'Tā de pífū hěn hǎo, báibái de.', turkish: 'Cildi çok güzel, bembeyaz.' }] },
+  { id: 'h4_334', chinese: '脾气', pinyin: 'píqi', turkish: 'mizaç, huy, öfke', level: 4, examples: [{ chinese: '他的脾气很好，从不发火。', pinyin: 'Tā de píqi hěn hǎo, cóng bù fāhuǒ.', turkish: 'Huyu çok iyi, hiç sinirlenmiyor.' }] },
+
+  // Q
+  { id: 'h4_335', chinese: '其次', pinyin: 'qícì', turkish: 'ikinci olarak, ondan sonra', level: 4, examples: [{ chinese: '首先要努力，其次要有方法。', pinyin: 'Shǒuxiān yào nǔlì, qícì yào yǒu fāngfǎ.', turkish: 'Önce çalışkan olmak gerekir, ikinci olarak yöntem gerekir.' }] },
+  { id: 'h4_336', chinese: '前途', pinyin: 'qiántú', turkish: 'gelecek, ilerisi, kariyer', level: 4, examples: [{ chinese: '这个年轻人的前途一片光明。', pinyin: 'Zhège niánqīng rén de qiántú yī piàn guāngmíng.', turkish: 'Bu gencin geleceği çok parlak.' }] },
+  { id: 'h4_337', chinese: '亲戚', pinyin: 'qīnqi', turkish: 'akraba', level: 4, examples: [{ chinese: '过年时，我们全家去亲戚家拜年。', pinyin: 'Guònián shí, wǒmen quánjiā qù qīnqi jiā bàinián.', turkish: 'Yeni Yıl\'da tüm ailemiz akrabalara yeni yıl ziyaretine gider.' }] },
+  { id: 'h4_338', chinese: '勤奋', pinyin: 'qínfèn', turkish: 'çalışkan, gayretli', level: 4, examples: [{ chinese: '她学习非常勤奋。', pinyin: 'Tā xuéxí fēicháng qínfèn.', turkish: 'Çalışmada çok gayretli.' }] },
+  { id: 'h4_339', chinese: '区别', pinyin: 'qūbié', turkish: 'fark, ayrım; ayırt etmek', level: 4, examples: [{ chinese: '这两个词有什么区别？', pinyin: 'Zhè liǎng gè cí yǒu shénme qūbié?', turkish: 'Bu iki kelimenin farkı nedir?' }] },
+  { id: 'h4_340', chinese: '确定', pinyin: 'quèdìng', turkish: 'belirlemek, kesinleştirmek; kesin', level: 4, examples: [{ chinese: '请确定你的出发时间。', pinyin: 'Qǐng quèdìng nǐ de chūfā shíjiān.', turkish: 'Lütfen kalkış saatini belirle.' }] },
+  { id: 'h4_341', chinese: '请假', pinyin: 'qǐngjià', turkish: 'izin istemek, mazeret bildirmek', level: 4, examples: [{ chinese: '他生病了，向老师请假。', pinyin: 'Tā shēngbìng le, xiàng lǎoshī qǐngjià.', turkish: 'Hastalandı, öğretmenden izin istedi.' }] },
+
+  // R
+  { id: 'h4_342', chinese: '任何', pinyin: 'rènhé', turkish: 'herhangi, her türlü', level: 4, examples: [{ chinese: '我愿意回答任何问题。', pinyin: 'Wǒ yuànyì huídá rènhé wèntí.', turkish: 'Her türlü soruyu cevaplamaya razıyım.' }] },
+  { id: 'h4_343', chinese: '日常', pinyin: 'rìcháng', turkish: 'günlük, olağan', level: 4, examples: [{ chinese: '这是我日常生活中的一部分。', pinyin: 'Zhè shì wǒ rìcháng shēnghuó zhōng de yī bùfen.', turkish: 'Bu benim günlük hayatımın bir parçası.' }] },
+  { id: 'h4_344', chinese: '如何', pinyin: 'rúhé', turkish: 'nasıl, ne şekilde', level: 4, examples: [{ chinese: '你如何看待这件事？', pinyin: 'Nǐ rúhé kàndài zhè jiàn shì?', turkish: 'Bu meseleye nasıl bakıyorsun?' }] },
+
+  // S
+  { id: 'h4_345', chinese: '上当', pinyin: 'shàngdàng', turkish: 'aldatılmak, kandırılmak', level: 4, examples: [{ chinese: '他买了假货，上当了。', pinyin: 'Tā mǎi le jiǎhuò, shàngdàng le.', turkish: 'Sahte ürün satın aldı, kandırıldı.' }] },
+  { id: 'h4_346', chinese: '深', pinyin: 'shēn', turkish: 'derin; koyu (renk)', level: 4, examples: [{ chinese: '这条河很深，不能游泳。', pinyin: 'Zhè tiáo hé hěn shēn, bù néng yóuyǒng.', turkish: 'Bu nehir çok derin, yüzülemez.' }] },
+  { id: 'h4_347', chinese: '甚至', pinyin: 'shènzhì', turkish: 'hatta, bile, -e kadar', level: 4, examples: [{ chinese: '他很努力，甚至周末也不休息。', pinyin: 'Tā hěn nǔlì, shènzhì zhōumò yě bù xiūxi.', turkish: 'Çok çalışkan, hatta hafta sonları bile dinlenmiyor.' }] },
+  { id: 'h4_348', chinese: '剩', pinyin: 'shèng', turkish: 'kalmak, artmak', level: 4, examples: [{ chinese: '饭剩了很多，吃不完。', pinyin: 'Fàn shèng le hěn duō, chī bu wán.', turkish: 'Çok fazla yemek kaldı, bitirilemiyor.' }] },
+  { id: 'h4_349', chinese: '时刻', pinyin: 'shíkè', turkish: 'an, vakit, her zaman', level: 4, examples: [{ chinese: '要时刻记住自己的目标。', pinyin: 'Yào shíkè jìzhù zìjǐ de mùbiāo.', turkish: 'Kendi hedefini her zaman hatırlamalısın.' }] },
+  { id: 'h4_350', chinese: '实际', pinyin: 'shíjì', turkish: 'gerçek, fiili, pratik; aslında', level: 4, examples: [{ chinese: '理论和实际有很大差距。', pinyin: 'Lǐlùn hé shíjì yǒu hěn dà chājù.', turkish: 'Teori ile pratik arasında büyük fark var.' }] },
+  { id: 'h4_351', chinese: '实在', pinyin: 'shízài', turkish: 'gerçekten, hakikaten; dürüst', level: 4, examples: [{ chinese: '这道题实在太难了。', pinyin: 'Zhè dào tí shízài tài nán le.', turkish: 'Bu soru gerçekten çok zor.' }] },
+  { id: 'h4_352', chinese: '受到', pinyin: 'shòudào', turkish: 'almak, maruz kalmak, kazanmak', level: 4, examples: [{ chinese: '他受到了老师的表扬。', pinyin: 'Tā shòudào le lǎoshī de biǎoyáng.', turkish: 'Öğretmenden övgü aldı.' }] },
+  { id: 'h4_353', chinese: '首先', pinyin: 'shǒuxiān', turkish: 'öncelikle, ilk önce, her şeyden önce', level: 4, examples: [{ chinese: '首先，我想感谢大家的支持。', pinyin: 'Shǒuxiān, wǒ xiǎng gǎnxiè dàjiā de zhīchí.', turkish: 'Her şeyden önce, herkesin desteği için teşekkür etmek istiyorum.' }] },
+  { id: 'h4_354', chinese: '数量', pinyin: 'shùliàng', turkish: 'miktar, sayı, adet', level: 4, examples: [{ chinese: '这次参加活动的人数量很多。', pinyin: 'Zhè cì cānjiā huódòng de rén shùliàng hěn duō.', turkish: 'Bu etkinliğe katılan insan sayısı çok fazla.' }] },
+  { id: 'h4_355', chinese: '说法', pinyin: 'shuōfǎ', turkish: 'söyleyiş biçimi, görüş', level: 4, examples: [{ chinese: '对于这件事，有不同的说法。', pinyin: 'Duìyú zhè jiàn shì, yǒu bùtóng de shuōfǎ.', turkish: 'Bu konu hakkında farklı görüşler var.' }] },
+  { id: 'h4_356', chinese: '善于', pinyin: 'shànyú', turkish: 'konusunda iyi olmak, mahir olmak', level: 4, examples: [{ chinese: '她善于和人沟通。', pinyin: 'Tā shànyú hé rén gōutōng.', turkish: 'İnsanlarla iletişim kurmakta iyidir.' }] },
+
+  // T
+  { id: 'h4_357', chinese: '特点', pinyin: 'tèdiǎn', turkish: 'özellik, karakteristik', level: 4, examples: [{ chinese: '中文的一个特点是没有字母。', pinyin: 'Zhōngwén de yī gè tèdiǎn shì méiyǒu zìmǔ.', turkish: 'Çincenin bir özelliği alfabesinin olmamasıdır.' }] },
+  { id: 'h4_358', chinese: '同时', pinyin: 'tóngshí', turkish: 'aynı zamanda, eş zamanlı', level: 4, examples: [{ chinese: '她同时学习中文和英文。', pinyin: 'Tā tóngshí xuéxí Zhōngwén hé Yīngwén.', turkish: 'Aynı anda hem Çince hem İngilizce öğreniyor.' }] },
+  { id: 'h4_359', chinese: '同样', pinyin: 'tóngyàng', turkish: 'aynı şekilde, benzer şekilde', level: 4, examples: [{ chinese: '我们面临同样的问题。', pinyin: 'Wǒmen miànlín tóngyàng de wèntí.', turkish: 'Aynı sorunla karşı karşıyayız.' }] },
+  { id: 'h4_360', chinese: '体会', pinyin: 'tǐhuì', turkish: 'deneyimlemek, özünde hissetmek', level: 4, examples: [{ chinese: '我体会到了努力的重要性。', pinyin: 'Wǒ tǐhuì dào le nǔlì de zhòng yào xìng.', turkish: 'Çabalamayın önemini içimde hissettim.' }] },
+
+  // W
+  { id: 'h4_361', chinese: '完成', pinyin: 'wánchéng', turkish: 'tamamlamak, bitirmek', level: 4, examples: [{ chinese: '请在明天之前完成这项任务。', pinyin: 'Qǐng zài míngtiān zhīqián wánchéng zhè xiàng rènwù.', turkish: 'Lütfen bu görevi yarına kadar tamamla.' }] },
+  { id: 'h4_362', chinese: '误会', pinyin: 'wùhuì', turkish: 'yanlış anlamak, yanlış anlama', level: 4, examples: [{ chinese: '对不起，我误会你了。', pinyin: 'Duìbuqǐ, wǒ wùhuì nǐ le.', turkish: 'Özür dilerim, seni yanlış anladım.' }] },
+  { id: 'h4_363', chinese: '文章', pinyin: 'wénzhāng', turkish: 'makale, yazı, metin', level: 4, examples: [{ chinese: '他写了一篇很好的文章。', pinyin: 'Tā xiě le yī piān hěn hǎo de wénzhāng.', turkish: 'Çok güzel bir makale yazdı.' }] },
+  { id: 'h4_364', chinese: '万一', pinyin: 'wànyī', turkish: 'ya ... olursa, ihtimale karşı', level: 4, examples: [{ chinese: '万一下雨，我们就在室内活动。', pinyin: 'Wànyī xià yǔ, wǒmen jiù zài shìnèi huódòng.', turkish: 'Ya yağmur yağarsa, içeride faaliyet yaparız.' }] },
+
+  // X
+  { id: 'h4_365', chinese: '吸引', pinyin: 'xīyǐn', turkish: 'çekmek, cezbetmek, ilgi çekmek', level: 4, examples: [{ chinese: '这本书的题目很吸引人。', pinyin: 'Zhè běn shū de títù hěn xīyǐn rén.', turkish: 'Bu kitabın başlığı çok ilgi çekici.' }] },
+  { id: 'h4_366', chinese: '消息', pinyin: 'xiāoxi', turkish: 'haber, bilgi, mesaj', level: 4, examples: [{ chinese: '你有没有他的消息？', pinyin: 'Nǐ yǒu méiyǒu tā de xiāoxi?', turkish: 'Ondan haber aldın mı?' }] },
+  { id: 'h4_367', chinese: '心理', pinyin: 'xīnlǐ', turkish: 'psikoloji, zihin, iç dünya', level: 4, examples: [{ chinese: '考试前他的心理压力很大。', pinyin: 'Kǎoshì qián tā de xīnlǐ yālì hěn dà.', turkish: 'Sınavdan önce psikolojik baskısı çok büyük.' }] },
+  { id: 'h4_368', chinese: '幸运', pinyin: 'xìngyùn', turkish: 'şanslı, talihli; şans', level: 4, examples: [{ chinese: '真幸运，我找到了钱包。', pinyin: 'Zhēn xìngyùn, wǒ zhǎodào le qiánbāo.', turkish: 'Ne şans, cüzdanımı buldum.' }] },
+  { id: 'h4_369', chinese: '选手', pinyin: 'xuǎnshǒu', turkish: 'yarışmacı, sporcu, katılımcı', level: 4, examples: [{ chinese: '参加比赛的选手都很厉害。', pinyin: 'Cānjiā bǐsài de xuǎnshǒu dōu hěn lìhai.', turkish: 'Yarışmaya katılan sporcular hepsi çok yetenekli.' }] },
+  { id: 'h4_370', chinese: '学期', pinyin: 'xuéqī', turkish: 'dönem, sömestr', level: 4, examples: [{ chinese: '这个学期你学了多少汉字？', pinyin: 'Zhège xuéqī nǐ xué le duōshao Hànzì?', turkish: 'Bu dönemde kaç Çin karakteri öğrendin?' }] },
+  { id: 'h4_371', chinese: '相同', pinyin: 'xiāngtóng', turkish: 'aynı, özdeş', level: 4, examples: [{ chinese: '我们有相同的爱好。', pinyin: 'Wǒmen yǒu xiāngtóng de àihào.', turkish: 'Aynı hobilere sahibiz.' }] },
+  { id: 'h4_372', chinese: '向', pinyin: 'xiàng', turkish: 'doğru, yönünde; öğrenmek', level: 4, examples: [{ chinese: '向左转，就到了。', pinyin: 'Xiàng zuǒ zhuǎn, jiù dào le.', turkish: 'Sola dön, hemen orada.' }] },
+  { id: 'h4_373', chinese: '现代', pinyin: 'xiàndài', turkish: 'modern, çağdaş', level: 4, examples: [{ chinese: '这是一座现代化的城市。', pinyin: 'Zhè shì yī zuò xiàndàihuà de chéngshì.', turkish: 'Burası modern bir şehir.' }] },
+  { id: 'h4_374', chinese: '吸烟', pinyin: 'xīyān', turkish: 'sigara içmek', level: 4, examples: [{ chinese: '这里禁止吸烟。', pinyin: 'Zhèlǐ jìnzhǐ xīyān.', turkish: 'Burada sigara içmek yasak.' }] },
+
+  // Y
+  { id: 'h4_375', chinese: '压力', pinyin: 'yālì', turkish: 'baskı, stres', level: 4, examples: [{ chinese: '工作压力太大，需要放松。', pinyin: 'Gōngzuò yālì tài dà, xūyào fàngsōng.', turkish: 'İş baskısı çok fazla, rahatlamak gerekiyor.' }] },
+  { id: 'h4_376', chinese: '严格', pinyin: 'yángé', turkish: 'katı, sıkı, titiz', level: 4, examples: [{ chinese: '父母对孩子要求很严格。', pinyin: 'Fùmǔ duì háizi yāoqiú hěn yángé.', turkish: 'Ebeveynlerin çocuklardan beklentileri çok katı.' }] },
+  { id: 'h4_377', chinese: '阳光', pinyin: 'yángguāng', turkish: 'güneş ışığı; pozitif, neşeli', level: 4, examples: [{ chinese: '今天阳光明媚，出去散步吧。', pinyin: 'Jīntiān yángguāng míngmèi, chūqù sànbù ba.', turkish: 'Bugün güneş parlıyor, dışarı yürüyüşe çıkalım.' }] },
+  { id: 'h4_378', chinese: '要求', pinyin: 'yāoqiú', turkish: 'talep etmek, gerektirmek; gereksinim', level: 4, examples: [{ chinese: '这份工作要求有工作经验。', pinyin: 'Zhè fèn gōngzuò yāoqiú yǒu gōngzuò jīngyàn.', turkish: 'Bu iş iş deneyimi gerektiriyor.' }] },
+  { id: 'h4_379', chinese: '意义', pinyin: 'yìyì', turkish: 'anlam, önem, değer', level: 4, examples: [{ chinese: '这件事对我有很大的意义。', pinyin: 'Zhè jiàn shì duì wǒ yǒu hěn dà de yìyì.', turkish: 'Bu olay benim için büyük bir anlam taşıyor.' }] },
+  { id: 'h4_380', chinese: '影响', pinyin: 'yǐngxiǎng', turkish: 'etkilemek, etki, tesir', level: 4, examples: [{ chinese: '父母对孩子的影响很大。', pinyin: 'Fùmǔ duì háizi de yǐngxiǎng hěn dà.', turkish: 'Ebeveynlerin çocuklar üzerindeki etkisi çok büyük.' }] },
+  { id: 'h4_381', chinese: '勇气', pinyin: 'yǒngqì', turkish: 'cesaret, yüreklilik', level: 4, examples: [{ chinese: '你需要有勇气面对困难。', pinyin: 'Nǐ xūyào yǒu yǒngqì miànduì kùnnan.', turkish: 'Zorluklarla yüzleşmek için cesarete ihtiyacın var.' }] },
+  { id: 'h4_382', chinese: '优秀', pinyin: 'yōuxiù', turkish: 'üstün, mükemmel, olağanüstü', level: 4, examples: [{ chinese: '她是班里最优秀的学生。', pinyin: 'Tā shì bān lǐ zuì yōuxiù de xuésheng.', turkish: 'Sınıftaki en üstün öğrenci o.' }] },
+  { id: 'h4_383', chinese: '严重', pinyin: 'yánzhòng', turkish: 'ciddi, ağır, vahim', level: 4, examples: [{ chinese: '这个问题很严重，需要马上解决。', pinyin: 'Zhège wèntí hěn yánzhòng, xūyào mǎshàng jiějué.', turkish: 'Bu sorun çok ciddi, hemen çözülmesi gerekiyor.' }] },
+  { id: 'h4_384', chinese: '一旦', pinyin: 'yīdàn', turkish: 'bir kez, bir kere; -dığında', level: 4, examples: [{ chinese: '一旦做出决定，就不要后悔。', pinyin: 'Yīdàn zuòchū juédìng, jiù bùyào hòuhuǐ.', turkish: 'Bir karar verdiğinde, pişman olma.' }] },
+  { id: 'h4_385', chinese: '以便', pinyin: 'yǐbiàn', turkish: 'kolaylık sağlamak için, -mesi amacıyla', level: 4, examples: [{ chinese: '请留下电话，以便联系。', pinyin: 'Qǐng liú xià diànhuà, yǐbiàn liánxi.', turkish: 'Lütfen telefon numaranı bırak, iletişim kolaylaşsın.' }] },
+  { id: 'h4_386', chinese: '引起', pinyin: 'yǐnqǐ', turkish: 'neden olmak, yol açmak, uyandırmak', level: 4, examples: [{ chinese: '这件事引起了大家的关注。', pinyin: 'Zhè jiàn shì yǐnqǐ le dàjiā de guānzhù.', turkish: 'Bu olay herkesin dikkatini çekti.' }] },
+  { id: 'h4_387', chinese: '优惠', pinyin: 'yōuhuì', turkish: 'indirim, ayrıcalıklı fiyat', level: 4, examples: [{ chinese: '学生可以享受优惠价格。', pinyin: 'Xuésheng kěyǐ xiǎngshòu yōuhuì jiàgé.', turkish: 'Öğrenciler indirimli fiyattan yararlanabilir.' }] },
+  { id: 'h4_388', chinese: '有关', pinyin: 'yǒuguān', turkish: 'ilgili, hakkında, bağlantılı', level: 4, examples: [{ chinese: '这件事有关你的未来。', pinyin: 'Zhè jiàn shì yǒuguān nǐ de wèilái.', turkish: 'Bu olay senin geleceğinle ilgili.' }] },
+  { id: 'h4_389', chinese: '语言', pinyin: 'yǔyán', turkish: 'dil, lisan', level: 4, examples: [{ chinese: '语言是沟通的桥梁。', pinyin: 'Yǔyán shì gōutōng de qiáoliáng.', turkish: 'Dil, iletişimin köprüsüdür.' }] },
+  { id: 'h4_390', chinese: '依然', pinyin: 'yīrán', turkish: 'hala, yine de, eskisi gibi', level: 4, examples: [{ chinese: '多年过去了，她依然那么美丽。', pinyin: 'Duō nián guòqù le, tā yīrán nàme měilì.', turkish: 'Yıllar geçti, o hala o kadar güzel.' }] },
+
+  // Z
+  { id: 'h4_391', chinese: '责任', pinyin: 'zérèn', turkish: 'sorumluluk, görev', level: 4, examples: [{ chinese: '做父母是一种很大的责任。', pinyin: 'Zuò fùmǔ shì yī zhǒng hěn dà de zérèn.', turkish: 'Ebeveyn olmak çok büyük bir sorumluluktur.' }] },
+  { id: 'h4_392', chinese: '增加', pinyin: 'zēngjiā', turkish: 'artırmak, çoğaltmak, artmak', level: 4, examples: [{ chinese: '最近物价增加了不少。', pinyin: 'Zuìjìn wùjià zēngjiā le bùshǎo.', turkish: 'Son zamanlarda fiyatlar epey arttı.' }] },
+  { id: 'h4_393', chinese: '值得', pinyin: 'zhídé', turkish: 'değmek, hak etmek, layık olmak', level: 4, examples: [{ chinese: '这本书值得一读。', pinyin: 'Zhè běn shū zhídé yī dú.', turkish: 'Bu kitap okunmaya değer.' }] },
+  { id: 'h4_394', chinese: '重点', pinyin: 'zhòngdiǎn', turkish: 'odak noktası, önemli nokta, özet', level: 4, examples: [{ chinese: '考试的重点是什么？', pinyin: 'Kǎoshì de zhòngdiǎn shì shénme?', turkish: 'Sınavın odak noktası nedir?' }] },
+  { id: 'h4_395', chinese: '主要', pinyin: 'zhǔyào', turkish: 'ana, başlıca, temel', level: 4, examples: [{ chinese: '这个项目的主要问题是资金不足。', pinyin: 'Zhège xiàngmù de zhǔyào wèntí shì zījīn bùzú.', turkish: 'Bu projenin ana sorunu fon yetersizliği.' }] },
+  { id: 'h4_396', chinese: '自从', pinyin: 'zìcóng', turkish: '-den beri, -den itibaren', level: 4, examples: [{ chinese: '自从来到中国，我每天都学中文。', pinyin: 'Zìcóng lái dào Zhōngguó, wǒ měitiān dōu xué Zhōngwén.', turkish: 'Çin\'e geldiğimden beri her gün Çince çalışıyorum.' }] },
+  { id: 'h4_397', chinese: '逐渐', pinyin: 'zhújiàn', turkish: 'giderek, yavaş yavaş, adım adım', level: 4, examples: [{ chinese: '她的中文逐渐变好了。', pinyin: 'Tā de Zhōngwén zhújiàn biàn hǎo le.', turkish: 'Onun Çincesi giderek iyileşiyor.' }] },
+  { id: 'h4_398', chinese: '主动', pinyin: 'zhǔdòng', turkish: 'inisiyatif, aktif; kendiliğinden', level: 4, examples: [{ chinese: '遇到问题要主动想办法。', pinyin: 'Yùdào wèntí yào zhǔdòng xiǎng bànfǎ.', turkish: 'Sorunla karşılaşınca kendin çözüm aramalısın.' }] },
+  { id: 'h4_399', chinese: '自信', pinyin: 'zìxìn', turkish: 'özgüven, kendine güvenmek', level: 4, examples: [{ chinese: '你要对自己有自信。', pinyin: 'Nǐ yào duì zìjǐ yǒu zìxìn.', turkish: 'Kendine güvenmelisin.' }] },
+  { id: 'h4_400', chinese: '综合', pinyin: 'zōnghé', turkish: 'kapsamlı, bütünleşik, genel', level: 4, examples: [{ chinese: '这是一家综合性医院。', pinyin: 'Zhè shì yī jiā zōnghéxìng yīyuàn.', turkish: 'Burası kapsamlı bir hastane.' }] },
+
+  // Devam - A
+  { id: 'h4_401', chinese: '暗示', pinyin: 'ànshì', turkish: 'ima etmek, ipucu vermek', level: 4, examples: [{ chinese: '他暗示我不要说出去。', pinyin: 'Tā ànshì wǒ bùyào shuō chūqù.', turkish: 'Bana dışarı söylemememi ima etti.' }] },
+  { id: 'h4_402', chinese: '安慰', pinyin: 'ānwèi', turkish: 'teselli etmek, rahatlatmak', level: 4, examples: [{ chinese: '她失败后，朋友们安慰她。', pinyin: 'Tā shībài hòu, péngyoumen ānwèi tā.', turkish: 'Başarısız olduktan sonra arkadaşları onu teselli etti.' }] },
+
+  // B
+  { id: 'h4_403', chinese: '保护', pinyin: 'bǎohù', turkish: 'korumak, muhafaza etmek', level: 4, examples: [{ chinese: '我们要保护环境。', pinyin: 'Wǒmen yào bǎohù huánjìng.', turkish: 'Çevreyi korumalıyız.' }] },
+  { id: 'h4_404', chinese: '不如', pinyin: 'bùrú', turkish: '-den daha kötü, yetersiz kalmak', level: 4, examples: [{ chinese: '与其等待，不如主动出击。', pinyin: 'Yǔqí děngdài, bùrú zhǔdòng chūjī.', turkish: 'Beklemek yerine, aktif harekete geçmek daha iyidir.' }] },
+  { id: 'h4_405', chinese: '不断', pinyin: 'búduàn', turkish: 'sürekli, durmaksızın', level: 4, examples: [{ chinese: '要不断学习，提高自己。', pinyin: 'Yào búduàn xuéxí, tígāo zìjǐ.', turkish: 'Sürekli öğrenmeli, kendini geliştirmelisin.' }] },
+
+  // C
+  { id: 'h4_406', chinese: '成绩', pinyin: 'chéngjì', turkish: 'not, sonuç, başarı', level: 4, examples: [{ chinese: '这次考试她的成绩很好。', pinyin: 'Zhè cì kǎoshì tā de chéngjì hěn hǎo.', turkish: 'Bu sınavdaki notu çok iyi.' }] },
+  { id: 'h4_407', chinese: '出口', pinyin: 'chūkǒu', turkish: 'çıkış; ihracat', level: 4, examples: [{ chinese: '请从这个出口离开。', pinyin: 'Qǐng cóng zhège chūkǒu líkāi.', turkish: 'Lütfen bu çıkıştan ayrılın.' }] },
+  { id: 'h4_408', chinese: '出租', pinyin: 'chūzū', turkish: 'kiralamak, kiraya vermek', level: 4, examples: [{ chinese: '这套房子出租吗？', pinyin: 'Zhè tào fángzi chūzū ma?', turkish: 'Bu daire kiralık mı?' }] },
+  { id: 'h4_409', chinese: '从事', pinyin: 'cóngshì', turkish: 'ile ilgilenmek, alanında çalışmak', level: 4, examples: [{ chinese: '他从事教育工作已经二十年了。', pinyin: 'Tā cóngshì jiàoyù gōngzuò yǐjīng èrshí nián le.', turkish: 'Eğitim alanında çalışması yirmi yılı geçti.' }] },
+  { id: 'h4_410', chinese: '促进', pinyin: 'cùjìn', turkish: 'geliştirmek, teşvik etmek', level: 4, examples: [{ chinese: '运动可以促进健康。', pinyin: 'Yùndòng kěyǐ cùjìn jiànkāng.', turkish: 'Egzersiz sağlığı geliştirebilir.' }] },
+
+  // D
+  { id: 'h4_411', chinese: '等于', pinyin: 'děngyú', turkish: 'eşit olmak, demek olmak', level: 4, examples: [{ chinese: '一公里等于一千米。', pinyin: 'Yī gōnglǐ děngyú yīqiān mǐ.', turkish: 'Bir kilometre bin metreye eşittir.' }] },
+  { id: 'h4_412', chinese: '调查', pinyin: 'diàochá', turkish: 'araştırmak, soruşturmak', level: 4, examples: [{ chinese: '警察正在调查这件案子。', pinyin: 'Jǐngchá zhèngzài diàochá zhè jiàn ànzi.', turkish: 'Polis bu davayı soruşturuyor.' }] },
+  { id: 'h4_413', chinese: '当作', pinyin: 'dàngzuò', turkish: 'olarak görmek, saymak', level: 4, examples: [{ chinese: '把学习当作一种乐趣。', pinyin: 'Bǎ xuéxí dàngzuò yī zhǒng lèqù.', turkish: 'Öğrenmeyi bir zevk olarak gör.' }] },
+
+  // F
+  { id: 'h4_414', chinese: '分析', pinyin: 'fēnxī', turkish: 'analiz etmek, çözümlemek', level: 4, examples: [{ chinese: '请分析一下这道题的解题思路。', pinyin: 'Qǐng fēnxī yīxià zhè dào tí de jiětí sīlù.', turkish: 'Lütfen bu sorunun çözüm yaklaşımını analiz et.' }] },
+  { id: 'h4_415', chinese: '付', pinyin: 'fù', turkish: 'ödemek, vermek', level: 4, examples: [{ chinese: '我用手机付了款。', pinyin: 'Wǒ yòng shǒujī fù le kuǎn.', turkish: 'Telefonumla ödeme yaptım.' }] },
+  { id: 'h4_416', chinese: '方案', pinyin: 'fāng\'àn', turkish: 'plan, proje, öneri', level: 4, examples: [{ chinese: '我们需要制定一个新方案。', pinyin: 'Wǒmen xūyào zhìdìng yī gè xīn fāng\'àn.', turkish: 'Yeni bir plan hazırlamamız gerekiyor.' }] },
+  { id: 'h4_417', chinese: '放弃', pinyin: 'fàngqì', turkish: 'vazgeçmek, bırakmak, terk etmek', level: 4, examples: [{ chinese: '无论多难，都不要放弃。', pinyin: 'Wúlùn duō nán, dōu bùyào fàngqì.', turkish: 'Ne kadar zor olursa olsun, vazgeçme.' }] },
+
+  // G
+  { id: 'h4_418', chinese: '根据', pinyin: 'gēnjù', turkish: 'dayanarak, göre, baz alarak', level: 4, examples: [{ chinese: '根据天气预报，明天会下雨。', pinyin: 'Gēnjù tiānqì yùbào, míngtiān huì xià yǔ.', turkish: 'Hava tahminine göre yarın yağmur yağacak.' }] },
+  { id: 'h4_419', chinese: '公里', pinyin: 'gōnglǐ', turkish: 'kilometre', level: 4, examples: [{ chinese: '从这里到火车站有两公里。', pinyin: 'Cóng zhèlǐ dào huǒchēzhàn yǒu liǎng gōnglǐ.', turkish: 'Buradan istasyona iki kilometre var.' }] },
+  { id: 'h4_420', chinese: '观点', pinyin: 'guāndiǎn', turkish: 'görüş, bakış açısı, kanı', level: 4, examples: [{ chinese: '对这件事，每个人的观点不同。', pinyin: 'Duì zhè jiàn shì, měi gè rén de guāndiǎn bùtóng.', turkish: 'Bu konuda herkesin görüşü farklı.' }] },
+  { id: 'h4_421', chinese: '过去', pinyin: 'guòqù', turkish: 'geçmiş; geçmek', level: 4, examples: [{ chinese: '过去的事情就让它过去吧。', pinyin: 'Guòqù de shìqíng jiù ràng tā guòqù ba.', turkish: 'Geçmişte olanları geçmişte bırak.' }] },
+
+  // H
+  { id: 'h4_422', chinese: '环境', pinyin: 'huánjìng', turkish: 'çevre, ortam', level: 4, examples: [{ chinese: '良好的学习环境很重要。', pinyin: 'Liánghǎo de xuéxí huánjìng hěn zhòng yào.', turkish: 'İyi bir çalışma ortamı çok önemlidir.' }] },
+  { id: 'h4_423', chinese: '忽然', pinyin: 'hūrán', turkish: 'aniden, birdenbire', level: 4, examples: [{ chinese: '他忽然站了起来。', pinyin: 'Tā hūrán zhàn le qǐlái.', turkish: 'Aniden ayağa kalktı.' }] },
+
+  // J
+  { id: 'h4_424', chinese: '集中', pinyin: 'jízhōng', turkish: 'odaklanmak, toplamak, yoğunlaştırmak', level: 4, examples: [{ chinese: '上课时要集中注意力。', pinyin: 'Shàngkè shí yào jízhōng zhùyìlì.', turkish: 'Ders sırasında dikkatini toplamalısın.' }] },
+  { id: 'h4_425', chinese: '价格', pinyin: 'jiàgé', turkish: 'fiyat, değer', level: 4, examples: [{ chinese: '这件衣服的价格有点贵。', pinyin: 'Zhè jiàn yīfu de jiàgé yǒudiǎn guì.', turkish: 'Bu elbisenin fiyatı biraz pahalı.' }] },
+  { id: 'h4_426', chinese: '教育', pinyin: 'jiàoyù', turkish: 'eğitim; eğitmek', level: 4, examples: [{ chinese: '教育对一个国家很重要。', pinyin: 'Jiàoyù duì yī gè guójiā hěn zhòng yào.', turkish: 'Eğitim bir ülke için çok önemlidir.' }] },
+  { id: 'h4_427', chinese: '经过', pinyin: 'jīngguò', turkish: 'geçmek, uğramak; sonucunda', level: 4, examples: [{ chinese: '经过努力，他终于成功了。', pinyin: 'Jīngguò nǔlì, tā zhōngyú chénggōng le.', turkish: 'Çabalaması sonucunda nihayet başardı.' }] },
+  { id: 'h4_428', chinese: '经营', pinyin: 'jīngyíng', turkish: 'yönetmek, işletmek, iş yapmak', level: 4, examples: [{ chinese: '他经营着一家小饭馆。', pinyin: 'Tā jīngyíng zhe yī jiā xiǎo fànguǎn.', turkish: 'Küçük bir lokanta işletiyor.' }] },
+  { id: 'h4_429', chinese: '交', pinyin: 'jiāo', turkish: 'teslim etmek, vermek, ödemek', level: 4, examples: [{ chinese: '请明天把作业交给老师。', pinyin: 'Qǐng míngtiān bǎ zuòyè jiāo gěi lǎoshī.', turkish: 'Lütfen yarın ödevi öğretmene teslim et.' }] },
+
+  // K
+  { id: 'h4_430', chinese: '科技', pinyin: 'kējì', turkish: 'bilim ve teknoloji', level: 4, examples: [{ chinese: '现代科技发展很快。', pinyin: 'Xiàndài kējì fāzhǎn hěn kuài.', turkish: 'Modern bilim ve teknoloji çok hızlı gelişiyor.' }] },
+  { id: 'h4_431', chinese: '开发', pinyin: 'kāifā', turkish: 'geliştirmek, açmak, keşfetmek', level: 4, examples: [{ chinese: '他们正在开发一款新软件。', pinyin: 'Tāmen zhèngzài kāifā yī kuǎn xīn ruǎnjiàn.', turkish: 'Yeni bir yazılım geliştiriyorlar.' }] },
+
+  // L
+  { id: 'h4_432', chinese: '来自', pinyin: 'láizì', turkish: '-den gelmek, köken almak', level: 4, examples: [{ chinese: '他来自中国南方。', pinyin: 'Tā láizì Zhōngguó nánfāng.', turkish: 'Çin\'in güneyinden geliyor.' }] },
+  { id: 'h4_433', chinese: '类', pinyin: 'lèi', turkish: 'tür, çeşit, kategori', level: 4, examples: [{ chinese: '这类问题我遇到过很多次。', pinyin: 'Zhè lèi wèntí wǒ yùdào guò hěn duō cì.', turkish: 'Bu tür sorunla çok kez karşılaştım.' }] },
+  { id: 'h4_434', chinese: '旅行', pinyin: 'lǚxíng', turkish: 'seyahat etmek, yolculuk yapmak', level: 4, examples: [{ chinese: '她喜欢一个人去旅行。', pinyin: 'Tā xǐhuān yīgèrén qù lǚxíng.', turkish: 'Yalnız seyahat etmeyi seviyor.' }] },
+
+  // M
+  { id: 'h4_435', chinese: '满足', pinyin: 'mǎnzú', turkish: 'tatmin olmak, yetmek, sağlamak', level: 4, examples: [{ chinese: '我对目前的生活很满足。', pinyin: 'Wǒ duì mùqián de shēnghuó hěn mǎnzú.', turkish: 'Mevcut hayatımdan çok memnunum.' }] },
+  { id: 'h4_436', chinese: '明确', pinyin: 'míngquè', turkish: 'net, kesin, açık', level: 4, examples: [{ chinese: '请明确告诉我你的想法。', pinyin: 'Qǐng míngquè gàosù wǒ nǐ de xiǎngfǎ.', turkish: 'Lütfen bana düşünceni açıkça söyle.' }] },
+  { id: 'h4_437', chinese: '模仿', pinyin: 'mófǎng', turkish: 'taklit etmek, öykünmek', level: 4, examples: [{ chinese: '孩子喜欢模仿大人的行为。', pinyin: 'Háizi xǐhuān mófǎng dàrén de xíngwéi.', turkish: 'Çocuklar yetişkinlerin davranışlarını taklit etmeyi sever.' }] },
+  { id: 'h4_438', chinese: '民族', pinyin: 'mínzú', turkish: 'etnik grup, millet', level: 4, examples: [{ chinese: '中国有五十六个民族。', pinyin: 'Zhōngguó yǒu wǔshíliù gè mínzú.', turkish: 'Çin\'de elli altı etnik grup bulunmaktadır.' }] },
+
+  // N
+  { id: 'h4_439', chinese: '内心', pinyin: 'nèixīn', turkish: 'iç dünya, kalp, gönül', level: 4, examples: [{ chinese: '她内心很平静。', pinyin: 'Tā nèixīn hěn píngjìng.', turkish: 'İç dünyası çok huzurlu.' }] },
+
+  // P
+  { id: 'h4_440', chinese: '批评', pinyin: 'pīpíng', turkish: 'eleştirmek, azarlamak', level: 4, examples: [{ chinese: '老师批评了那些不好好学习的学生。', pinyin: 'Lǎoshī pīpíng le nàxiē bù hǎohǎo xuéxí de xuésheng.', turkish: 'Öğretmen düzgün çalışmayan öğrencileri eleştirdi.' }] },
+  { id: 'h4_441', chinese: '品质', pinyin: 'pǐnzhì', turkish: 'kalite, nitelik, karakter', level: 4, examples: [{ chinese: '这个品牌的产品品质很好。', pinyin: 'Zhège pǐnpái de chǎnpǐn pǐnzhì hěn hǎo.', turkish: 'Bu markanın ürünlerinin kalitesi çok iyi.' }] },
+
+  // Q
+  { id: 'h4_442', chinese: '全部', pinyin: 'quánbù', turkish: 'tamamı, hepsi', level: 4, examples: [{ chinese: '他全部的钱都用来买书了。', pinyin: 'Tā quánbù de qián dōu yòng lái mǎi shū le.', turkish: 'Tüm parasını kitap almak için kullandı.' }] },
+  { id: 'h4_443', chinese: '却', pinyin: 'què', turkish: 'ama, oysa, aksine', level: 4, examples: [{ chinese: '他努力了，却没有成功。', pinyin: 'Tā nǔlì le, què méiyǒu chénggōng.', turkish: 'Çabaladı, ama başaramadı.' }] },
+  { id: 'h4_444', chinese: '其实', pinyin: 'qíshí', turkish: 'aslında, gerçekte', level: 4, examples: [{ chinese: '其实这件事没有你想象的那么难。', pinyin: 'Qíshí zhè jiàn shì méiyǒu nǐ xiǎngxiàng de nàme nán.', turkish: 'Aslında bu iş senin hayal ettiğin kadar zor değil.' }] },
+
+  // R
+  { id: 'h4_445', chinese: '人口', pinyin: 'rénkǒu', turkish: 'nüfus', level: 4, examples: [{ chinese: '中国的人口超过十四亿。', pinyin: 'Zhōngguó de rénkǒu chāoguò shísì yì.', turkish: 'Çin\'in nüfusu on dört milyarı aşıyor.' }] },
+  { id: 'h4_446', chinese: '认识', pinyin: 'rènshi', turkish: 'tanımak, bilmek', level: 4, examples: [{ chinese: '我们是在大学里认识的。', pinyin: 'Wǒmen shì zài dàxué lǐ rènshi de.', turkish: 'Üniversitede tanıştık.' }] },
+
+  // S
+  { id: 'h4_447', chinese: '收获', pinyin: 'shōuhuò', turkish: 'kazanım, sonuç, hasat', level: 4, examples: [{ chinese: '这次旅行收获很大。', pinyin: 'Zhè cì lǚxíng shōuhuò hěn dà.', turkish: 'Bu seyahattan çok şey kazandım.' }] },
+  { id: 'h4_448', chinese: '思考', pinyin: 'sīkǎo', turkish: 'düşünmek, derin düşünmek', level: 4, examples: [{ chinese: '遇到问题要认真思考。', pinyin: 'Yùdào wèntí yào rènzhēn sīkǎo.', turkish: 'Sorunla karşılaştığında ciddi düşünmelisin.' }] },
+  { id: 'h4_449', chinese: '思想', pinyin: 'sīxiǎng', turkish: 'düşünce, fikir, ideoloji', level: 4, examples: [{ chinese: '他的思想很先进。', pinyin: 'Tā de sīxiǎng hěn xiānjìn.', turkish: 'Düşünceleri çok ileri.' }] },
+  { id: 'h4_450', chinese: '书架', pinyin: 'shūjià', turkish: 'kitaplık, raf', level: 4, examples: [{ chinese: '书架上有很多书。', pinyin: 'Shūjià shàng yǒu hěn duō shū.', turkish: 'Rafta çok kitap var.' }] },
+
+  // T
+  { id: 'h4_451', chinese: '提出', pinyin: 'tíchū', turkish: 'öne sürmek, ileri sürmek', level: 4, examples: [{ chinese: '他提出了一个新想法。', pinyin: 'Tā tíchū le yī gè xīn xiǎngfǎ.', turkish: 'Yeni bir fikir ileri sürdü.' }] },
+  { id: 'h4_452', chinese: '团结', pinyin: 'tuánjié', turkish: 'birlik, dayanışma; birleştirmek', level: 4, examples: [{ chinese: '团结就是力量。', pinyin: 'Tuánjié jiù shì lìliàng.', turkish: 'Birlik güçtür.' }] },
+  { id: 'h4_453', chinese: '推广', pinyin: 'tuīguǎng', turkish: 'yaygınlaştırmak, tanıtmak', level: 4, examples: [{ chinese: '政府在推广普通话。', pinyin: 'Zhèngfǔ zài tuīguǎng pǔtōnghuà.', turkish: 'Hükümet Mandarin Çincesini yaygınlaştırıyor.' }] },
+  { id: 'h4_454', chinese: '讨论', pinyin: 'tǎolùn', turkish: 'tartışmak, görüşmek', level: 4, examples: [{ chinese: '大家一起讨论这个问题吧。', pinyin: 'Dàjiā yīqǐ tǎolùn zhège wèntí ba.', turkish: 'Hep birlikte bu sorunu tartışalım.' }] },
+
+  // W
+  { id: 'h4_455', chinese: '文字', pinyin: 'wénzì', turkish: 'yazı, harf, karakter', level: 4, examples: [{ chinese: '汉字是中国的传统文字。', pinyin: 'Hànzì shì Zhōngguó de chuántǒng wénzì.', turkish: 'Çin karakterleri Çin\'in geleneksel yazısıdır.' }] },
+  { id: 'h4_456', chinese: '无论', pinyin: 'wúlùn', turkish: 'ne olursa olsun, -den bağımsız', level: 4, examples: [{ chinese: '无论发生什么，我都支持你。', pinyin: 'Wúlùn fāshēng shénme, wǒ dōu zhīchí nǐ.', turkish: 'Ne olursa olsun, seni destekliyorum.' }] },
+
+  // X
+  { id: 'h4_457', chinese: '系列', pinyin: 'xìliè', turkish: 'seri, dizi, set', level: 4, examples: [{ chinese: '这是一系列关于中国文化的书。', pinyin: 'Zhè shì yī xìliè guānyú Zhōngguó wénhuà de shū.', turkish: 'Bu Çin kültürü hakkında bir seri kitap.' }] },
+  { id: 'h4_458', chinese: '下降', pinyin: 'xiàjiàng', turkish: 'düşmek, azalmak, inişe geçmek', level: 4, examples: [{ chinese: '最近气温明显下降。', pinyin: 'Zuìjìn qìwēn míngxiǎn xiàjiàng.', turkish: 'Son zamanlarda sıcaklık belirgin şekilde düştü.' }] },
+  { id: 'h4_459', chinese: '形成', pinyin: 'xíngchéng', turkish: 'oluşmak, meydana gelmek', level: 4, examples: [{ chinese: '长期练习可以形成好习惯。', pinyin: 'Cháng qī liànxí kěyǐ xíngchéng hǎo xíguàn.', turkish: 'Uzun süreli pratik iyi alışkanlıklar oluşturabilir.' }] },
+  { id: 'h4_460', chinese: '行为', pinyin: 'xíngwéi', turkish: 'davranış, eylem, tutum', level: 4, examples: [{ chinese: '他的行为让大家很失望。', pinyin: 'Tā de xíngwéi ràng dàjiā hěn shīwàng.', turkish: 'Davranışı herkesi hayal kırıklığına uğrattı.' }] },
+  { id: 'h4_461', chinese: '需求', pinyin: 'xūqiú', turkish: 'talep, ihtiyaç', level: 4, examples: [{ chinese: '市场上对这类产品的需求很大。', pinyin: 'Shìchǎng shàng duì zhè lèi chǎnpǐn de xūqiú hěn dà.', turkish: 'Piyasada bu tür ürünlere talep çok fazla.' }] },
+
+  // Y
+  { id: 'h4_462', chinese: '应聘', pinyin: 'yìngpìn', turkish: 'iş başvurusu yapmak', level: 4, examples: [{ chinese: '他应聘了一家大公司。', pinyin: 'Tā yìngpìn le yī jiā dà gōngsī.', turkish: 'Büyük bir şirkete iş başvurusu yaptı.' }] },
+  { id: 'h4_463', chinese: '有关', pinyin: 'yǒuguān', turkish: 'ilgili, bağlantılı, hakkında', level: 4, examples: [{ chinese: '这件事有关你的利益。', pinyin: 'Zhè jiàn shì yǒuguān nǐ de lìyì.', turkish: 'Bu mesele senin çıkarınla ilgili.' }] },
+  { id: 'h4_464', chinese: '一切', pinyin: 'yīqiè', turkish: 'her şey, her türlü', level: 4, examples: [{ chinese: '一切都会好起来的。', pinyin: 'Yīqiè dōu huì hǎo qǐlái de.', turkish: 'Her şey düzelecek.' }] },
+  { id: 'h4_465', chinese: '在乎', pinyin: 'zàihu', turkish: 'önemsemek, umursamak', level: 4, examples: [{ chinese: '他不在乎别人的看法。', pinyin: 'Tā bú zàihu biéren de kànfǎ.', turkish: 'Başkalarının görüşlerini umursamıyor.' }] },
+  { id: 'h4_466', chinese: '运用', pinyin: 'yùnyòng', turkish: 'uygulamak, kullanmak', level: 4, examples: [{ chinese: '要学会运用所学的知识。', pinyin: 'Yào xuéhuì yùnyòng suǒ xué de zhīshi.', turkish: 'Öğrendiklerini uygulamayı öğrenmelisin.' }] },
+  { id: 'h4_467', chinese: '以及', pinyin: 'yǐjí', turkish: 've, ile birlikte, yanı sıra', level: 4, examples: [{ chinese: '请带上身份证以及护照。', pinyin: 'Qǐng dài shàng shēnfènzhèng yǐjí hùzhào.', turkish: 'Lütfen kimlik ve pasaportunuzu yanınıza alın.' }] },
+
+  // Z
+  { id: 'h4_468', chinese: '赞成', pinyin: 'zànchéng', turkish: 'onaylamak, katılmak', level: 4, examples: [{ chinese: '我完全赞成你的意见。', pinyin: 'Wǒ wánquán zànchéng nǐ de yìjiàn.', turkish: 'Görüşüne tamamen katılıyorum.' }] },
+  { id: 'h4_469', chinese: '政府', pinyin: 'zhèngfǔ', turkish: 'hükümet, devlet', level: 4, examples: [{ chinese: '政府宣布了新的政策。', pinyin: 'Zhèngfǔ xuānbù le xīn de zhèngcè.', turkish: 'Hükümet yeni politikayı açıkladı.' }] },
+  { id: 'h4_470', chinese: '只好', pinyin: 'zhǐhǎo', turkish: 'mecbur olmak, başka çaresi kalmamak', level: 4, examples: [{ chinese: '没有车了，我只好走路回去。', pinyin: 'Méiyǒu chē le, wǒ zhǐhǎo zǒulù huíqù.', turkish: 'Araç kalmadı, yürüyerek dönmek zorunda kaldım.' }] },
+  { id: 'h4_471', chinese: '重视', pinyin: 'zhòngshì', turkish: 'önem vermek, ciddiye almak', level: 4, examples: [{ chinese: '要重视身体健康。', pinyin: 'Yào zhòngshì shēntǐ jiànkāng.', turkish: 'Beden sağlığına önem vermelisin.' }] },
+  { id: 'h4_472', chinese: '自然', pinyin: 'zìrán', turkish: 'doğa; doğal, kendiliğinden', level: 4, examples: [{ chinese: '保护自然是我们的责任。', pinyin: 'Bǎohù zìrán shì wǒmen de zérèn.', turkish: 'Doğayı korumak bizim sorumluluğumuz.' }] },
+  { id: 'h4_473', chinese: '总是', pinyin: 'zǒngshì', turkish: 'her zaman, daima', level: 4, examples: [{ chinese: '她总是准时到校。', pinyin: 'Tā zǒngshì zhǔnshí dào xiào.', turkish: 'Her zaman zamanında okula gelir.' }] },
+  { id: 'h4_474', chinese: '作家', pinyin: 'zuòjiā', turkish: 'yazar, edebiyatçı', level: 4, examples: [{ chinese: '他是一位著名的作家。', pinyin: 'Tā shì yī wèi zhùmíng de zuòjiā.', turkish: 'Ünlü bir yazardır.' }] },
+  { id: 'h4_475', chinese: '尊重', pinyin: 'zūnzhòng', turkish: 'saygı göstermek, değer vermek', level: 4, examples: [{ chinese: '要尊重他人的意见。', pinyin: 'Yào zūnzhòng tārén de yìjiàn.', turkish: 'Başkalarının görüşlerine saygı göstermelisin.' }] },
+
+  // Ek kelimeler - gerçek HSK 4 listesi
+  { id: 'h4_476', chinese: '产品', pinyin: 'chǎnpǐn', turkish: 'ürün, mal', level: 4, examples: [{ chinese: '这家公司的产品很受欢迎。', pinyin: 'Zhè jiā gōngsī de chǎnpǐn hěn shòu huānyíng.', turkish: 'Bu şirketin ürünleri çok popüler.' }] },
+  { id: 'h4_477', chinese: '精神', pinyin: 'jīngshén', turkish: 'ruh, tin; enerjik, zinde', level: 4, examples: [{ chinese: '她今天看起来很精神。', pinyin: 'Tā jīntiān kàn qǐlái hěn jīngshén.', turkish: 'Bugün çok enerjik görünüyor.' }] },
+  { id: 'h4_478', chinese: '平等', pinyin: 'píngděng', turkish: 'eşit, eşitlik', level: 4, examples: [{ chinese: '人人生而平等。', pinyin: 'Rénrén shēng ér píngděng.', turkish: 'İnsanlar eşit doğar.' }] },
+  { id: 'h4_479', chinese: '文明', pinyin: 'wénmíng', turkish: 'medeniyet, uygar, terbiyeli', level: 4, examples: [{ chinese: '中华文明有五千年的历史。', pinyin: 'Zhōnghuá wénmíng yǒu wǔqiān nián de lìshǐ.', turkish: 'Çin medeniyetinin beş bin yıllık tarihi var.' }] },
+  { id: 'h4_480', chinese: '说服', pinyin: 'shuōfú', turkish: 'ikna etmek, inandırmak', level: 4, examples: [{ chinese: '他说服了父母同意他出国留学。', pinyin: 'Tā shuōfú le fùmǔ tóngyì tā chūguó liúxué.', turkish: 'Ebeveynlerini yurt dışında okumaya izin vermeleri için ikna etti.' }] },
+  { id: 'h4_481', chinese: '联合', pinyin: 'liánhé', turkish: 'birleşmek, ortak; birleşik', level: 4, examples: [{ chinese: '两家公司联合开发了新产品。', pinyin: 'Liǎng jiā gōngsī liánhé kāifā le xīn chǎnpǐn.', turkish: 'İki şirket ortak olarak yeni ürün geliştirdi.' }] },
+  { id: 'h4_482', chinese: '坦白', pinyin: 'tǎnbái', turkish: 'açık sözlü olmak, itiraf etmek', level: 4, examples: [{ chinese: '他坦白地说出了自己的错误。', pinyin: 'Tā tǎnbái de shuōchū le zìjǐ de cuòwù.', turkish: 'Hatalarını açıkça söyledi.' }] },
+  { id: 'h4_483', chinese: '推销', pinyin: 'tuīxiāo', turkish: 'satışını yapmak, pazarlamak', level: 4, examples: [{ chinese: '他负责推销公司的产品。', pinyin: 'Tā fùzé tuīxiāo gōngsī de chǎnpǐn.', turkish: 'Şirketin ürünlerini pazarlamaktan sorumlu.' }] },
+  { id: 'h4_484', chinese: '系', pinyin: 'xì', turkish: 'bölüm (üniversite); bağlamak', level: 4, examples: [{ chinese: '他是中文系的学生。', pinyin: 'Tā shì Zhōngwén xì de xuésheng.', turkish: 'Çin Dili bölümünün öğrencisi.' }] },
+  { id: 'h4_485', chinese: '限制', pinyin: 'xiànzhì', turkish: 'sınırlamak, kısıtlamak', level: 4, examples: [{ chinese: '这里限制车速为每小时六十公里。', pinyin: 'Zhèlǐ xiànzhì chēsù wèi měi xiǎoshí liùshí gōnglǐ.', turkish: 'Burada hız saatte altmış kilometre ile sınırlı.' }] },
+  { id: 'h4_486', chinese: '许多', pinyin: 'xǔduō', turkish: 'pek çok, birçok', level: 4, examples: [{ chinese: '我有许多问题想问你。', pinyin: 'Wǒ yǒu xǔduō wèntí xiǎng wèn nǐ.', turkish: 'Sana sormak istediğim pek çok sorum var.' }] },
+  { id: 'h4_487', chinese: '研究生', pinyin: 'yánjiūshēng', turkish: 'lisansüstü öğrenci, yüksek lisans öğrencisi', level: 4, examples: [{ chinese: '她正在读研究生。', pinyin: 'Tā zhèngzài dú yánjiūshēng.', turkish: 'Yüksek lisans yapıyor.' }] },
+  { id: 'h4_488', chinese: '已经', pinyin: 'yǐjīng', turkish: 'zaten, artık, çoktan', level: 4, examples: [{ chinese: '我已经吃过饭了。', pinyin: 'Wǒ yǐjīng chīguò fàn le.', turkish: 'Zaten yedim.' }] },
+  { id: 'h4_489', chinese: '竟然', pinyin: 'jìngrán', turkish: 'şaşırtıcı biçimde, nasıl olup da, inanılmaz ki', level: 4, examples: [{ chinese: '他竟然一个月学会了中文。', pinyin: 'Tā jìngrán yī gè yuè xuéhuì le Zhōngwén.', turkish: 'İnanılmaz, bir ayda Çinceyi öğrendi.' }] },
+  { id: 'h4_490', chinese: '坚决', pinyin: 'jiānjué', turkish: 'kararlı, kesin, kesinlikle', level: 4, examples: [{ chinese: '他坚决反对这个决定。', pinyin: 'Tā jiānjué fǎnduì zhège juédìng.', turkish: 'Bu karara kesinlikle karşı çıkıyor.' }] },
+  { id: 'h4_491', chinese: '关心', pinyin: 'guānxīn', turkish: 'ilgilenmek, umursamak', level: 4, examples: [{ chinese: '父母总是关心孩子的学习。', pinyin: 'Fùmǔ zǒngshì guānxīn háizi de xuéxí.', turkish: 'Ebeveynler daima çocukların öğrenimiyle ilgilenir.' }] },
+  { id: 'h4_492', chinese: '不足', pinyin: 'bùzú', turkish: 'yetersiz, eksik', level: 4, examples: [{ chinese: '时间不足，无法完成。', pinyin: 'Shíjiān bùzú, wúfǎ wánchéng.', turkish: 'Zaman yetersiz, tamamlanamaz.' }] },
+  { id: 'h4_493', chinese: '力量', pinyin: 'lìliàng', turkish: 'güç, kuvvet', level: 4, examples: [{ chinese: '知识就是力量。', pinyin: 'Zhīshi jiù shì lìliàng.', turkish: 'Bilgi güçtür.' }] },
+  { id: 'h4_494', chinese: '描述', pinyin: 'miáoshù', turkish: 'tanımlamak, betimlemek', level: 4, examples: [{ chinese: '请描述一下你看到的情况。', pinyin: 'Qǐng miáoshù yīxià nǐ kàndào de qíngkuàng.', turkish: 'Gördüğün durumu lütfen tanımla.' }] },
+  { id: 'h4_495', chinese: '必须', pinyin: 'bìxū', turkish: 'zorunlu olmak, -meli/-malı', level: 4, examples: [{ chinese: '你必须在五点前到达。', pinyin: 'Nǐ bìxū zài wǔ diǎn qián dào dá.', turkish: 'Beşten önce ulaşmak zorundasın.' }] },
+  { id: 'h4_496', chinese: '发挥', pinyin: 'fāhuī', turkish: 'sergilemek, göstermek, geliştirmek', level: 4, examples: [{ chinese: '考试时要充分发挥自己的水平。', pinyin: 'Kǎoshì shí yào chōngfèn fāhuī zìjǐ de shuǐpíng.', turkish: 'Sınavda seviyeni tam olarak sergilemelisin.' }] },
+  { id: 'h4_497', chinese: '看望', pinyin: 'kànwàng', turkish: 'ziyaret etmek, görmek', level: 4, examples: [{ chinese: '我去医院看望了生病的朋友。', pinyin: 'Wǒ qù yīyuàn kànwàng le shēngbìng de péngyou.', turkish: 'Hastanede hasta arkadaşımı ziyaret ettim.' }] },
+  { id: 'h4_498', chinese: '结构', pinyin: 'jiégòu', turkish: 'yapı, düzen, strüktür', level: 4, examples: [{ chinese: '这篇文章的结构很清晰。', pinyin: 'Zhè piān wénzhāng de jiégòu hěn qīngxī.', turkish: 'Bu makalenin yapısı çok net.' }] },
+  { id: 'h4_499', chinese: '气候', pinyin: 'qìhòu', turkish: 'iklim', level: 4, examples: [{ chinese: '这里的气候四季如春。', pinyin: 'Zhèlǐ de qìhòu sìjì rú chūn.', turkish: 'Buradaki iklim dört mevsim bahar gibi.' }] },
+  { id: 'h4_500', chinese: '形象', pinyin: 'xíngxiàng', turkish: 'imaj, şekil, görüntü', level: 4, examples: [{ chinese: '他在公司里的形象很好。', pinyin: 'Tā zài gōngsī lǐ de xíngxiàng hěn hǎo.', turkish: 'Şirketteki imajı çok iyi.' }] },
+  { id: 'h4_501', chinese: '幽默', pinyin: 'yōumò', turkish: 'mizahi, komik, esprili', level: 4, examples: [{ chinese: '他是一个很幽默的人。', pinyin: 'Tā shì yīgè hěn yōumò de rén.', turkish: 'Çok esprili biri.' }] },
+  { id: 'h4_502', chinese: '证件', pinyin: 'zhèngjiàn', turkish: 'belge, kimlik, sertifika', level: 4, examples: [{ chinese: '出入境需要出示证件。', pinyin: 'Chūrùjìng xūyào chūshì zhèngjiàn.', turkish: 'Giriş çıkışta belge göstermek gerekiyor.' }] },
+  { id: 'h4_503', chinese: '毕竟', pinyin: 'bìjìng', turkish: 'sonuçta, ne de olsa', level: 4, examples: [{ chinese: '他毕竟还是个孩子。', pinyin: 'Tā bìjìng hái shì gè háizi.', turkish: 'Ne de olsa o hâlâ bir çocuk.' }] },
+  { id: 'h4_504', chinese: '情绪', pinyin: 'qíngxù', turkish: 'duygu, ruh hali, tutum', level: 4, examples: [{ chinese: '他今天情绪不好。', pinyin: 'Tā jīntiān qíngxù bù hǎo.', turkish: 'Bugün ruh hali iyi değil.' }] },
+  { id: 'h4_505', chinese: '出发点', pinyin: 'chūfādiǎn', turkish: 'başlangıç noktası, amaç', level: 4, examples: [{ chinese: '他做事的出发点是好的。', pinyin: 'Tā zuòshì de chūfādiǎn shì hǎo de.', turkish: 'Bir şey yaparken niyeti iyidir.' }] },
+  { id: 'h4_506', chinese: '动力', pinyin: 'dònglì', turkish: 'güdü, itici güç, motivasyon', level: 4, examples: [{ chinese: '兴趣是最好的学习动力。', pinyin: 'Xìngqù shì zuì hǎo de xuéxí dònglì.', turkish: 'İlgi en iyi öğrenme motivasyonudur.' }] },
+  { id: 'h4_507', chinese: '依据', pinyin: 'yījù', turkish: 'dayanmak, dayanak, baz', level: 4, examples: [{ chinese: '判断要有依据，不能凭空猜测。', pinyin: 'Pànduàn yào yǒu yījù, bù néng píngkōng cāicè.', turkish: 'Değerlendirmenin dayanağı olmalı, rastgele tahmin edilmemeli.' }] },
+  { id: 'h4_508', chinese: '推测', pinyin: 'tuīcè', turkish: 'tahmin etmek, çıkarım yapmak', level: 4, examples: [{ chinese: '根据现有的信息，我们可以推测结果。', pinyin: 'Gēnjù xiànyǒu de xìnxī, wǒmen kěyǐ tuīcè jiéguǒ.', turkish: 'Mevcut bilgilere dayanarak sonucu tahmin edebiliriz.' }] },
+  { id: 'h4_509', chinese: '争论', pinyin: 'zhēnglùn', turkish: 'tartışmak, çekişmek', level: 4, examples: [{ chinese: '他们为这件事争论了很久。', pinyin: 'Tāmen wèi zhè jiàn shì zhēnglùn le hěn jiǔ.', turkish: 'Bu mesele için uzun süre tartıştılar.' }] },
+  { id: 'h4_510', chinese: '后果', pinyin: 'hòuguǒ', turkish: 'sonuç, akıbet (genellikle olumsuz)', level: 4, examples: [{ chinese: '不认真学习的后果是考试不及格。', pinyin: 'Bù rènzhēn xuéxí de hòuguǒ shì kǎoshì bù jígé.', turkish: 'Ciddi çalışmamanın sonucu sınavı geçememektir.' }] },
+  { id: 'h4_511', chinese: '反对', pinyin: 'fǎnduì', turkish: 'karşı olmak, itiraz etmek', level: 4, examples: [{ chinese: '他反对这项计划。', pinyin: 'Tā fǎnduì zhè xiàng jìhuà.', turkish: 'Bu plana karşı çıkıyor.' }] },
+  { id: 'h4_512', chinese: '证实', pinyin: 'zhèngshí', turkish: 'doğrulamak, ispatlamak', level: 4, examples: [{ chinese: '这一发现证实了他的理论。', pinyin: 'Zhè yī fāxiàn zhèngshí le tā de lǐlùn.', turkish: 'Bu keşif onun teorisini doğruladı.' }] },
+  { id: 'h4_513', chinese: '消费', pinyin: 'xiāofèi', turkish: 'tüketmek, harcamak, tüketim', level: 4, examples: [{ chinese: '年轻人的消费能力越来越强。', pinyin: 'Niánqīng rén de xiāofèi nénglì yuè lái yuè qiáng.', turkish: 'Gençlerin tüketim gücü giderek artıyor.' }] },
+  { id: 'h4_514', chinese: '损失', pinyin: 'sǔnshī', turkish: 'kayıp, zarar', level: 4, examples: [{ chinese: '这次事故造成了很大的损失。', pinyin: 'Zhè cì shìgù zàochéng le hěn dà de sǔnshī.', turkish: 'Bu kaza büyük kayıplara yol açtı.' }] },
+  { id: 'h4_515', chinese: '招聘', pinyin: 'zhāopìn', turkish: 'eleman almak, işe alım', level: 4, examples: [{ chinese: '公司正在招聘新员工。', pinyin: 'Gōngsī zhèngzài zhāopìn xīn yuángōng.', turkish: 'Şirket yeni çalışan arıyor.' }] },
+  { id: 'h4_516', chinese: '品尝', pinyin: 'pǐncháng', turkish: 'tatmak, denemek', level: 4, examples: [{ chinese: '来中国一定要品尝各地美食。', pinyin: 'Lái Zhōngguó yīdìng yào pǐncháng gè dì měishí.', turkish: 'Çin\'e gelince her yerin yöresel yemeklerini mutlaka tatmalısın.' }] },
+  { id: 'h4_517', chinese: '合作', pinyin: 'hézuò', turkish: 'işbirliği yapmak, ortaklık', level: 4, examples: [{ chinese: '两国在经济领域展开了合作。', pinyin: 'Liǎng guó zài jīngjì lǐngyù zhǎnkāi le hézuò.', turkish: 'İki ülke ekonomi alanında işbirliğine başladı.' }] },
+  { id: 'h4_518', chinese: '反映', pinyin: 'fǎnyìng', turkish: 'yansıtmak, bildirmek', level: 4, examples: [{ chinese: '这部电影反映了社会现实。', pinyin: 'Zhè bù diànyǐng fǎnyìng le shèhuì xiànshí.', turkish: 'Bu film toplumsal gerçekliği yansıtıyor.' }] },
+  { id: 'h4_519', chinese: '相信', pinyin: 'xiāngxìn', turkish: 'inanmak, güvenmek', level: 4, examples: [{ chinese: '我相信你一定能成功。', pinyin: 'Wǒ xiāngxìn nǐ yīdìng néng chénggōng.', turkish: 'Başaracağına inanıyorum.' }] },
+  { id: 'h4_520', chinese: '展示', pinyin: 'zhǎnshì', turkish: 'sergilemek, göstermek', level: 4, examples: [{ chinese: '这次展览展示了很多优秀作品。', pinyin: 'Zhè cì zhǎnlǎn zhǎnshì le hěn duō yōuxiù zuòpǐn.', turkish: 'Bu sergi pek çok üstün eser sergiledi.' }] },
+  { id: 'h4_521', chinese: '内部', pinyin: 'nèibù', turkish: 'iç, dahili', level: 4, examples: [{ chinese: '这是公司内部的事情。', pinyin: 'Zhè shì gōngsī nèibù de shìqíng.', turkish: 'Bu şirketin iç meselesi.' }] },
+  { id: 'h4_522', chinese: '前景', pinyin: 'qiánjǐng', turkish: 'gelecek görünümü, beklenti', level: 4, examples: [{ chinese: '这个行业的前景很好。', pinyin: 'Zhège hángyè de qiánjǐng hěn hǎo.', turkish: 'Bu sektörün geleceği çok parlak.' }] },
+  { id: 'h4_523', chinese: '改善', pinyin: 'gǎishàn', turkish: 'iyileştirmek, geliştirmek', level: 4, examples: [{ chinese: '我们要努力改善生活条件。', pinyin: 'Wǒmen yào nǔlì gǎishàn shēnghuó tiáojiàn.', turkish: 'Yaşam koşullarını iyileştirmek için çalışmalıyız.' }] },
+  { id: 'h4_524', chinese: '继承', pinyin: 'jìchéng', turkish: 'miras almak, devralmak, sürdürmek', level: 4, examples: [{ chinese: '我们要继承和发扬传统文化。', pinyin: 'Wǒmen yào jìchéng hé fāyáng chuántǒng wénhuà.', turkish: 'Geleneksel kültürü miras almalı ve geliştirmeliyiz.' }] },
+  { id: 'h4_525', chinese: '解释', pinyin: 'jiěshì', turkish: 'açıklamak, izah etmek', level: 4, examples: [{ chinese: '你能解释一下这个词的意思吗？', pinyin: 'Nǐ néng jiěshì yīxià zhège cí de yìsi ma?', turkish: 'Bu kelimenin anlamını açıklayabilir misin?' }] },
+  { id: 'h4_526', chinese: '主席', pinyin: 'zhǔxí', turkish: 'başkan, yönetim kurulu başkanı', level: 4, examples: [{ chinese: '会议由主席主持。', pinyin: 'Huìyì yóu zhǔxí zhǔchí.', turkish: 'Toplantıya başkan başkanlık etti.' }] },
+  { id: 'h4_527', chinese: '举例', pinyin: 'jǔlì', turkish: 'örnek vermek', level: 4, examples: [{ chinese: '请举例说明这个语法点。', pinyin: 'Qǐng jǔlì shuōmíng zhège yǔfǎ diǎn.', turkish: 'Lütfen bu dilbilgisi noktasını örnekle açıkla.' }] },
+  { id: 'h4_528', chinese: '消除', pinyin: 'xiāochú', turkish: 'gidermek, ortadan kaldırmak', level: 4, examples: [{ chinese: '要消除彼此之间的误会。', pinyin: 'Yào xiāochú bǐcǐ zhījiān de wùhuì.', turkish: 'Birbirimiz arasındaki yanlış anlamaları gidermeliyiz.' }] },
+  { id: 'h4_529', chinese: '注重', pinyin: 'zhùzhòng', turkish: 'önem vermek, dikkate almak', level: 4, examples: [{ chinese: '学习时要注重理解，不要死记硬背。', pinyin: 'Xuéxí shí yào zhùzhòng lǐjiě, bùyào sǐ jì yìng bèi.', turkish: 'Çalışırken anlamaya önem ver, ezberden kaçın.' }] },
+  { id: 'h4_530', chinese: '突出', pinyin: 'tūchū', turkish: 'öne çıkmak, belirginleşmek; öne çıkarmak', level: 4, examples: [{ chinese: '他的成绩在班里很突出。', pinyin: 'Tā de chéngjì zài bān lǐ hěn tūchū.', turkish: 'Sınıftaki notu çok öne çıkıyor.' }] },
+  { id: 'h4_531', chinese: '表现', pinyin: 'biǎoxiàn', turkish: 'sergilemek, performans; tutum', level: 4, examples: [{ chinese: '他今天的表现很出色。', pinyin: 'Tā jīntiān de biǎoxiàn hěn chūsè.', turkish: 'Bugünkü performansı çok başarılı.' }] },
+  { id: 'h4_532', chinese: '紧张', pinyin: 'jǐnzhāng', turkish: 'gergin, sinirli; yetersiz', level: 4, examples: [{ chinese: '面试时不要太紧张。', pinyin: 'Miànshì shí bùyào tài jǐnzhāng.', turkish: 'Mülakata giderken çok gergin olma.' }] },
+  { id: 'h4_533', chinese: '说不定', pinyin: 'shuōbudìng', turkish: 'belki, muhtemelen', level: 4, examples: [{ chinese: '说不定他今天不来了。', pinyin: 'Shuōbudìng tā jīntiān bù lái le.', turkish: 'Belki bugün gelmeyecek.' }] },
+  { id: 'h4_534', chinese: '解决', pinyin: 'jiějué', turkish: 'çözmek, halletmek', level: 4, examples: [{ chinese: '我们一起来解决这个问题。', pinyin: 'Wǒmen yīqǐ lái jiějué zhège wèntí.', turkish: 'Bu sorunu birlikte çözelim.' }] },
+  { id: 'h4_535', chinese: '感受', pinyin: 'gǎnshòu', turkish: 'hissetmek, algılamak; his, duygu', level: 4, examples: [{ chinese: '旅行让我感受到了不同的文化。', pinyin: 'Lǚxíng ràng wǒ gǎnshòu dào le bùtóng de wénhuà.', turkish: 'Seyahat bana farklı kültürleri hissettirdi.' }] },
+  { id: 'h4_536', chinese: '成立', pinyin: 'chénglì', turkish: 'kurmak, tesis etmek; kurulmak', level: 4, examples: [{ chinese: '这家公司成立于二零零五年。', pinyin: 'Zhè jiā gōngsī chénglì yú èr líng líng wǔ nián.', turkish: 'Bu şirket 2005 yılında kuruldu.' }] },
+  { id: 'h4_537', chinese: '联系', pinyin: 'liánxi', turkish: 'bağlantı kurmak, iletişim', level: 4, examples: [{ chinese: '有事随时联系我。', pinyin: 'Yǒu shì suíshí liánxi wǒ.', turkish: 'Bir şey olursa her zaman bana ulaş.' }] },
+  { id: 'h4_538', chinese: '变化', pinyin: 'biànhuà', turkish: 'değişim, dönüşüm', level: 4, examples: [{ chinese: '这个城市变化很大。', pinyin: 'Zhège chéngshì biànhuà hěn dà.', turkish: 'Bu şehir çok değişti.' }] },
+  { id: 'h4_539', chinese: '挑战', pinyin: 'tiǎozhàn', turkish: 'meydan okumak, zorlu görev', level: 4, examples: [{ chinese: '这次项目对我来说是一个大挑战。', pinyin: 'Zhè cì xiàngmù duì wǒ lái shuō shì yīgè dà tiǎozhàn.', turkish: 'Bu proje benim için büyük bir meydan okuma.' }] },
+  { id: 'h4_540', chinese: '好奇', pinyin: 'hàoqí', turkish: 'merak etmek, meraklı', level: 4, examples: [{ chinese: '孩子对周围的一切都很好奇。', pinyin: 'Háizi duì zhōuwéi de yīqiè dōu hěn hàoqí.', turkish: 'Çocuk etrafındaki her şeye karşı çok meraklı.' }] },
+  { id: 'h4_541', chinese: '参与', pinyin: 'cānyù', turkish: 'katılmak, iştirak etmek', level: 4, examples: [{ chinese: '欢迎大家积极参与讨论。', pinyin: 'Huānyíng dàjiā jījí cānyù tǎolùn.', turkish: 'Herkesi tartışmaya aktif katılmaya davet ediyoruz.' }] },
+  { id: 'h4_542', chinese: '适当', pinyin: 'shìdàng', turkish: 'uygun, yerinde, makul', level: 4, examples: [{ chinese: '做事要适当，不要太过分。', pinyin: 'Zuò shì yào shìdàng, bùyào tài guòfèn.', turkish: 'Her şeyi ölçülü yap, aşırıya kaçma.' }] },
+  { id: 'h4_543', chinese: '独立', pinyin: 'dúlì', turkish: 'bağımsız, özerk; bağımsızlık', level: 4, examples: [{ chinese: '年轻人要学会独立生活。', pinyin: 'Niánqīng rén yào xuéhuì dúlì shēnghuó.', turkish: 'Gençler bağımsız yaşamayı öğrenmeli.' }] },
+  { id: 'h4_544', chinese: '建立', pinyin: 'jiànlì', turkish: 'kurmak, tesis etmek', level: 4, examples: [{ chinese: '他们建立了深厚的友谊。', pinyin: 'Tāmen jiànlì le shēnhòu de yǒuyì.', turkish: 'Derin bir dostluk kurdular.' }] },
+  { id: 'h4_545', chinese: '经典', pinyin: 'jīngdiǎn', turkish: 'klasik, çığır açan', level: 4, examples: [{ chinese: '这是一部经典的中国电影。', pinyin: 'Zhè shì yī bù jīngdiǎn de Zhōngguó diànyǐng.', turkish: 'Bu klasik bir Çin filmi.' }] },
+  { id: 'h4_546', chinese: '总之', pinyin: 'zǒngzhī', turkish: 'kısaca, sonuç olarak', level: 4, examples: [{ chinese: '总之，这次活动很成功。', pinyin: 'Zǒngzhī, zhè cì huódòng hěn chénggōng.', turkish: 'Kısaca, bu etkinlik çok başarılıydı.' }] },
+  { id: 'h4_547', chinese: '普遍', pinyin: 'pǔbiàn', turkish: 'yaygın, genel, evrensel', level: 4, examples: [{ chinese: '这种现象在年轻人中很普遍。', pinyin: 'Zhè zhǒng xiànxiàng zài niánqīng rén zhōng hěn pǔbiàn.', turkish: 'Bu olgu gençler arasında çok yaygın.' }] },
+  { id: 'h4_548', chinese: '典型', pinyin: 'diǎnxíng', turkish: 'tipik, örnek teşkil eden', level: 4, examples: [{ chinese: '他是一个典型的成功商人。', pinyin: 'Tā shì yīgè diǎnxíng de chénggōng shāngrén.', turkish: 'O tipik bir başarılı iş insanı.' }] },
+  { id: 'h4_549', chinese: '热闹', pinyin: 'rènao', turkish: 'canlı, kalabalık, şenlikli', level: 4, examples: [{ chinese: '春节期间，街上很热闹。', pinyin: 'Chūnjié qījiān, jiē shàng hěn rènao.', turkish: 'Çin Yeni Yılı süresince sokaklar çok canlı.' }] },
+  { id: 'h4_550', chinese: '方式', pinyin: 'fāngshì', turkish: 'yöntem, biçim, tarz', level: 4, examples: [{ chinese: '每个人的学习方式不同。', pinyin: 'Měi gè rén de xuéxí fāngshì bùtóng.', turkish: 'Herkesin öğrenme biçimi farklıdır.' }] },
+  { id: 'h4_551', chinese: '大量', pinyin: 'dàliàng', turkish: 'büyük miktarda, bol', level: 4, examples: [{ chinese: '背单词需要大量的练习。', pinyin: 'Bèi dāncí xūyào dàliàng de liànxí.', turkish: 'Kelime ezberlemek çok fazla pratik gerektirir.' }] },
+  { id: 'h4_552', chinese: '相反', pinyin: 'xiāngfǎn', turkish: 'aksine, tam tersi', level: 4, examples: [{ chinese: '我的想法和你完全相反。', pinyin: 'Wǒ de xiǎngfǎ hé nǐ wánquán xiāngfǎn.', turkish: 'Düşüncem seninle tam tersi.' }] },
+  { id: 'h4_553', chinese: '开放', pinyin: 'kāifàng', turkish: 'açık, açık fikirli; açmak', level: 4, examples: [{ chinese: '这个国家经济开放程度很高。', pinyin: 'Zhège guójiā jīngjì kāifàng chéngdù hěn gāo.', turkish: 'Bu ülkenin ekonomik açıklık derecesi çok yüksek.' }] },
+  { id: 'h4_554', chinese: '追求', pinyin: 'zhuīqiú', turkish: 'peşinden gitmek, elde etmeye çalışmak', level: 4, examples: [{ chinese: '她一直在追求自己的梦想。', pinyin: 'Tā yīzhí zài zhuīqiú zìjǐ de mèngxiǎng.', turkish: 'Daima kendi hayalinin peşinden gidiyor.' }] },
+  { id: 'h4_555', chinese: '获得', pinyin: 'huòdé', turkish: 'elde etmek, kazanmak, almak', level: 4, examples: [{ chinese: '他在比赛中获得了第一名。', pinyin: 'Tā zài bǐsài zhōng huòdé le dì yī míng.', turkish: 'Yarışmada birinci oldu.' }] },
+  { id: 'h4_556', chinese: '考虑', pinyin: 'kǎolǜ', turkish: 'düşünmek, hesaba katmak', level: 4, examples: [{ chinese: '做决定之前要好好考虑。', pinyin: 'Zuò juédìng zhīqián yào hǎohǎo kǎolǜ.', turkish: 'Karar vermeden önce iyice düşünmelisin.' }] },
+  { id: 'h4_557', chinese: '假如', pinyin: 'jiǎrú', turkish: 'eğer, farz et ki', level: 4, examples: [{ chinese: '假如你是我，你会怎么做？', pinyin: 'Jiǎrú nǐ shì wǒ, nǐ huì zěnme zuò?', turkish: 'Benim yerimde olsaydın ne yapardın?' }] },
+  { id: 'h4_558', chinese: '担心', pinyin: 'dānxīn', turkish: 'endişelenmek, kaygılanmak', level: 4, examples: [{ chinese: '别担心，一切都会好的。', pinyin: 'Bié dānxīn, yīqiè dōu huì hǎo de.', turkish: 'Endişelenme, her şey yoluna girecek.' }] },
+  { id: 'h4_559', chinese: '状态', pinyin: 'zhuàngtài', turkish: 'durum, hal, koşul', level: 4, examples: [{ chinese: '他最近状态不太好。', pinyin: 'Tā zuìjìn zhuàngtài bú tài hǎo.', turkish: 'Son zamanlarda hali pek iyi değil.' }] },
+  { id: 'h4_560', chinese: '配合', pinyin: 'pèihé', turkish: 'iş birliği yapmak, uyum sağlamak', level: 4, examples: [{ chinese: '我们要互相配合完成任务。', pinyin: 'Wǒmen yào hùxiāng pèihé wánchéng rènwù.', turkish: 'Görevi tamamlamak için birbirimizle iş birliği yapmalıyız.' }] },
+  { id: 'h4_561', chinese: '场合', pinyin: 'chǎnghé', turkish: 'ortam, durum, bağlam', level: 4, examples: [{ chinese: '不同场合要有不同的穿着。', pinyin: 'Bùtóng chǎnghé yào yǒu bùtóng de chuānzhuó.', turkish: 'Farklı ortamlarda farklı kıyafet giyilmeli.' }] },
+  { id: 'h4_562', chinese: '体现', pinyin: 'tǐxiàn', turkish: 'yansıtmak, somutlaştırmak', level: 4, examples: [{ chinese: '这本书体现了作者的创意。', pinyin: 'Zhè běn shū tǐxiàn le zuòzhě de chuàngyì.', turkish: 'Bu kitap yazarın yaratıcılığını yansıtıyor.' }] },
+  { id: 'h4_563', chinese: '周到', pinyin: 'zhōudào', turkish: 'titiz, özenli, dikkatli', level: 4, examples: [{ chinese: '他们的服务很周到。', pinyin: 'Tāmen de fúwù hěn zhōudào.', turkish: 'Hizmetleri çok özenli.' }] },
+  { id: 'h4_564', chinese: '长处', pinyin: 'chángchù', turkish: 'güçlü yön, üstünlük', level: 4, examples: [{ chinese: '每个人都有自己的长处。', pinyin: 'Měi gè rén dōu yǒu zìjǐ de chángchù.', turkish: 'Herkesin kendine özgü güçlü yönleri vardır.' }] },
+  { id: 'h4_565', chinese: '减少', pinyin: 'jiǎnshǎo', turkish: 'azaltmak, azalmak', level: 4, examples: [{ chinese: '我们要减少浪费。', pinyin: 'Wǒmen yào jiǎnshǎo làngfèi.', turkish: 'İsrafı azaltmalıyız.' }] },
+  { id: 'h4_566', chinese: '影响力', pinyin: 'yǐngxiǎnglì', turkish: 'etki gücü, nüfuz', level: 4, examples: [{ chinese: '这位老师对学生有很大的影响力。', pinyin: 'Zhè wèi lǎoshī duì xuésheng yǒu hěn dà de yǐngxiǎnglì.', turkish: 'Bu öğretmenin öğrenciler üzerinde büyük etkisi var.' }] },
+  { id: 'h4_567', chinese: '精力', pinyin: 'jīnglì', turkish: 'enerji, güç, derman', level: 4, examples: [{ chinese: '年轻人精力充沛。', pinyin: 'Niánqīng rén jīnglì chōngpèi.', turkish: 'Gençlerin enerjisi bol.' }] },
+  { id: 'h4_568', chinese: '培养', pinyin: 'péiyǎng', turkish: 'yetiştirmek, geliştirmek', level: 4, examples: [{ chinese: '学校要培养学生的创新能力。', pinyin: 'Xuéxiào yào péiyǎng xuésheng de chuàngxīn nénglì.', turkish: 'Okul öğrencilerin yenilikçilik becerilerini geliştirmeli.' }] },
+  { id: 'h4_569', chinese: '拒绝', pinyin: 'jùjué', turkish: 'reddetmek, kabul etmemek', level: 4, examples: [{ chinese: '他拒绝了这份工作。', pinyin: 'Tā jùjué le zhè fèn gōngzuò.', turkish: 'Bu işi reddetti.' }] },
+  { id: 'h4_570', chinese: '普通话', pinyin: 'pǔtōnghuà', turkish: 'Mandarin Çincesi, standart Çince', level: 4, examples: [{ chinese: '全国都在推广普通话。', pinyin: 'Quánguó dōu zài tuīguǎng pǔtōnghuà.', turkish: 'Tüm ülkede Mandarin Çincesi yaygınlaştırılıyor.' }] },
+  { id: 'h4_571', chinese: '相处', pinyin: 'xiāngchǔ', turkish: 'birlikte olmak, geçinmek', level: 4, examples: [{ chinese: '我们相处得很好。', pinyin: 'Wǒmen xiāngchǔ de hěn hǎo.', turkish: 'Birbirimizle çok iyi geçiniyoruz.' }] },
+  { id: 'h4_572', chinese: '气氛', pinyin: 'qìfēn', turkish: 'atmosfer, hava, ortam', level: 4, examples: [{ chinese: '会场的气氛很热烈。', pinyin: 'Huìchǎng de qìfēn hěn rèliè.', turkish: 'Toplantı salonunun havası çok canlı.' }] },
+  { id: 'h4_573', chinese: '努力', pinyin: 'nǔlì', turkish: 'çalışmak, çabalamak; çaba', level: 4, examples: [{ chinese: '只要努力，就会有收获。', pinyin: 'Zhǐyào nǔlì, jiù huì yǒu shōuhuò.', turkish: 'Yeter ki çalış, kazanım elde edersin.' }] },
+  { id: 'h4_574', chinese: '坚定', pinyin: 'jiāndìng', turkish: 'kararlı, sağlam, kesin', level: 4, examples: [{ chinese: '要坚定自己的信念。', pinyin: 'Yào jiāndìng zìjǐ de xìnniàn.', turkish: 'Kendi inancını sağlam tut.' }] },
+  { id: 'h4_575', chinese: '相互', pinyin: 'xiānghù', turkish: 'karşılıklı, birbirlerine', level: 4, examples: [{ chinese: '同学之间要相互帮助。', pinyin: 'Tóngxué zhījiān yào xiānghù bāngzhù.', turkish: 'Sınıf arkadaşları birbirlerine yardımlaşmalı.' }] },
+  { id: 'h4_576', chinese: '观察', pinyin: 'guānchá', turkish: 'gözlemlemek, incelemek', level: 4, examples: [{ chinese: '仔细观察大自然。', pinyin: 'Zǐxì guānchá dà zìrán.', turkish: 'Doğayı dikkatle gözlemle.' }] },
+  { id: 'h4_577', chinese: '反正', pinyin: 'fǎnzhèng', turkish: 'her halükarda, nasıl olsa, zaten', level: 4, examples: [{ chinese: '反正你也在这里，帮我一下吧。', pinyin: 'Fǎnzhèng nǐ yě zài zhèlǐ, bāng wǒ yīxià ba.', turkish: 'Zaten sen de buradasın, bana yardım et.' }] },
+  { id: 'h4_578', chinese: '恢复', pinyin: 'huīfù', turkish: 'iyileşmek, geri yüklemek, düzelmek', level: 4, examples: [{ chinese: '她手术后很快恢复了健康。', pinyin: 'Tā shǒushù hòu hěn kuài huīfù le jiànkāng.', turkish: 'Ameliyattan sonra hızla sağlığına kavuştu.' }] },
+  { id: 'h4_579', chinese: '充分', pinyin: 'chōngfèn', turkish: 'yeterli, tam; tam anlamıyla', level: 4, examples: [{ chinese: '要充分利用时间学习。', pinyin: 'Yào chōngfèn lìyòng shíjiān xuéxí.', turkish: 'Zamanı tam olarak öğrenmek için kullanmalısın.' }] },
+  { id: 'h4_580', chinese: '尽管', pinyin: 'jǐnguǎn', turkish: 'her ne kadar, -e rağmen', level: 4, examples: [{ chinese: '尽管很累，他还是坚持工作。', pinyin: 'Jǐnguǎn hěn lèi, tā háishì jiānchí gōngzuò.', turkish: 'Her ne kadar yorgun olsa da çalışmaya devam etti.' }] },
+  { id: 'h4_581', chinese: '顺序', pinyin: 'shùnxù', turkish: 'sıra, düzen, tertip', level: 4, examples: [{ chinese: '请按顺序回答问题。', pinyin: 'Qǐng àn shùnxù huídá wèntí.', turkish: 'Lütfen soruları sırayla cevaplayın.' }] },
+  { id: 'h4_582', chinese: '假设', pinyin: 'jiǎshè', turkish: 'varsaymak, farz etmek', level: 4, examples: [{ chinese: '假设你明天要考试，你会怎么准备？', pinyin: 'Jiǎshè nǐ míngtiān yào kǎoshì, nǐ huì zěnme zhǔnbèi?', turkish: 'Farz et ki yarın sınavın var, nasıl hazırlanırsın?' }] },
+  { id: 'h4_583', chinese: '应用', pinyin: 'yìngyòng', turkish: 'uygulama, kullanmak', level: 4, examples: [{ chinese: '学以致用，把知识应用到实践中。', pinyin: 'Xuéyǐzhìyòng, bǎ zhīshi yìngyòng dào shíjiàn zhōng.', turkish: 'Öğrendiklerini uygula, bilgiyi pratiğe dök.' }] },
+  { id: 'h4_584', chinese: '网络', pinyin: 'wǎngluò', turkish: 'ağ, internet, ağ sistemi', level: 4, examples: [{ chinese: '现代人离不开网络。', pinyin: 'Xiàndài rén lí bu kāi wǎngluò.', turkish: 'Modern insanlar internetsiz yaşayamıyor.' }] },
+  { id: 'h4_585', chinese: '影视', pinyin: 'yǐngshì', turkish: 'film ve televizyon', level: 4, examples: [{ chinese: '她是一位著名的影视明星。', pinyin: 'Tā shì yī wèi zhùmíng de yǐngshì míngxīng.', turkish: 'Ünlü bir film ve televizyon yıldızı.' }] },
+  { id: 'h4_586', chinese: '创新', pinyin: 'chuàngxīn', turkish: 'yenilik, inovasyon; yenilikçi', level: 4, examples: [{ chinese: '创新是发展的动力。', pinyin: 'Chuàngxīn shì fāzhǎn de dònglì.', turkish: 'Yenilik, gelişmenin itici gücüdür.' }] },
+  { id: 'h4_587', chinese: '把握', pinyin: 'bǎwò', turkish: 'kavramak, fırsatı değerlendirmek; güven', level: 4, examples: [{ chinese: '要把握住这次机会。', pinyin: 'Yào bǎwò zhù zhè cì jīhuì.', turkish: 'Bu fırsatı değerlendirmelisin.' }] },
+  { id: 'h4_588', chinese: '幸好', pinyin: 'xìnghǎo', turkish: 'neyse ki, şükür ki', level: 4, examples: [{ chinese: '幸好你来了，不然我自己搬不动。', pinyin: 'Xìnghǎo nǐ lái le, bùrán wǒ zìjǐ bān bu dòng.', turkish: 'Neyse ki geldin, yoksa tek başıma taşıyamazdım.' }] },
+  { id: 'h4_589', chinese: '安静', pinyin: 'ānjìng', turkish: 'sessiz, sakin, huzurlu', level: 4, examples: [{ chinese: '图书馆里要保持安静。', pinyin: 'Túshūguǎn lǐ yào bǎochí ānjìng.', turkish: 'Kütüphanede sessizliği korumak gerekir.' }] },
+  { id: 'h4_590', chinese: '严肃', pinyin: 'yánsù', turkish: 'ciddi, resmi, ağırbaşlı', level: 4, examples: [{ chinese: '他在工作上非常严肃认真。', pinyin: 'Tā zài gōngzuò shàng fēicháng yánsù rènzhēn.', turkish: 'İşte çok ciddi ve titiz.' }] },
+  { id: 'h4_591', chinese: '乐意', pinyin: 'lèyì', turkish: 'memnuniyetle, isteyerek', level: 4, examples: [{ chinese: '我很乐意帮你。', pinyin: 'Wǒ hěn lèyì bāng nǐ.', turkish: 'Sana yardım etmekten memnuniyet duyarım.' }] },
+  { id: 'h4_592', chinese: '展览', pinyin: 'zhǎnlǎn', turkish: 'sergi, fuvar', level: 4, examples: [{ chinese: '博物馆正在举办一个艺术展览。', pinyin: 'Bówùguǎn zhèngzài jǔbàn yīgè yìshù zhǎnlǎn.', turkish: 'Müzede bir sanat sergisi düzenleniyor.' }] },
+  { id: 'h4_593', chinese: '节约', pinyin: 'jiéyuē', turkish: 'tasarruf etmek, kısıtlamak', level: 4, examples: [{ chinese: '我们要节约水资源。', pinyin: 'Wǒmen yào jiéyuē shuǐ zīyuán.', turkish: 'Su kaynaklarını tasarruflu kullanmalıyız.' }] },
+  { id: 'h4_594', chinese: '认可', pinyin: 'rènkě', turkish: 'onaylamak, kabul etmek', level: 4, examples: [{ chinese: '他的努力得到了大家的认可。', pinyin: 'Tā de nǔlì dédào le dàjiā de rènkě.', turkish: 'Çabası herkesin onayını aldı.' }] },
+  { id: 'h4_595', chinese: '整理', pinyin: 'zhěnglǐ', turkish: 'düzenlemek, toplamak, organize etmek', level: 4, examples: [{ chinese: '请整理一下桌子上的东西。', pinyin: 'Qǐng zhěnglǐ yīxià zhuōzi shàng de dōngxi.', turkish: 'Lütfen masadaki eşyaları düzenle.' }] },
+  { id: 'h4_596', chinese: '轮流', pinyin: 'lúnliú', turkish: 'sırayla, dönüşümlü olarak', level: 4, examples: [{ chinese: '大家轮流发言。', pinyin: 'Dàjiā lúnliú fāyán.', turkish: 'Herkes sırayla konuştu.' }] },
+  { id: 'h4_597', chinese: '好处', pinyin: 'hǎochu', turkish: 'yarar, avantaj, fayda', level: 4, examples: [{ chinese: '多读书有很多好处。', pinyin: 'Duō dú shū yǒu hěn duō hǎochu.', turkish: 'Çok kitap okumanın birçok yararı var.' }] },
+  { id: 'h4_598', chinese: '心愿', pinyin: 'xīnyuàn', turkish: 'dilek, arzu, niyet', level: 4, examples: [{ chinese: '她最大的心愿是全家健康。', pinyin: 'Tā zuì dà de xīnyuàn shì quánjiā jiànkāng.', turkish: 'En büyük dileği tüm ailenin sağlıklı olması.' }] },
+  { id: 'h4_599', chinese: '受欢迎', pinyin: 'shòu huānyíng', turkish: 'popüler, sevilen', level: 4, examples: [{ chinese: '这位老师非常受欢迎。', pinyin: 'Zhè wèi lǎoshī fēicháng shòu huānyíng.', turkish: 'Bu öğretmen çok sevilip sayılıyor.' }] },
+  { id: 'h4_600', chinese: '交际', pinyin: 'jiāojì', turkish: 'sosyal ilişkiler, iletişim, sosyalleşme', level: 4, examples: [{ chinese: '她的交际能力很强。', pinyin: 'Tā de jiāojì nénglì hěn qiáng.', turkish: 'Sosyal becerisi çok güçlü.' }] },
 ];
