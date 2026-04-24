@@ -3,17 +3,19 @@ export const STUDENT = {
   pinyin: 'Péng Nà',
 };
 
+const base = import.meta.env.BASE_URL;
+
 export const IMAGES = {
-  hedef:           '/images/hedef.png',           // gece hayali, hiç ilerleme yok
-  calisirken:      '/images/calisirken.png',       // masada çalışıyor, az ilerleme
-  calismaMaratonu: '/images/calisma-maratonu.png', // maraton, quiz başlangıcı
-  sabahErken:      '/images/sabah-erken.png',      // sabah 05:30, streak / ileri ilerleme
-  sikilmisCalisiyor: '/images/sikilmis-calisiyor.png', // sıkılmış ama devam, uzun flashcard
-  basarisizOlmus:  '/images/basarisiz-olmus.png',  // quiz düşük puan
-  pandaKutlama2:   '/images/panda-kutlama2.png',   // quiz orta puan / milestone
-  pandaKutlama1:   '/images/panda-kutlama1.png',   // quiz yüksek puan
-  hedefineUlasti:  '/images/hedefine-ulasti.png',  // tüm kelimeler öğrenildi
-  ogluyla:         '/images/ogluyla.png',          // sözlük sayfası
+  hedef:             `${base}images/hedef.png`,
+  calisirken:        `${base}images/calisirken.png`,
+  calismaMaratonu:   `${base}images/calisma-maratonu.png`,
+  sabahErken:        `${base}images/sabah-erken.png`,
+  sikilmisCalisiyor: `${base}images/sikilmis-calisiyor.png`,
+  basarisizOlmus:    `${base}images/basarisiz-olmus.png`,
+  pandaKutlama2:     `${base}images/panda-kutlama2.png`,
+  pandaKutlama1:     `${base}images/panda-kutlama1.png`,
+  hedefineUlasti:    `${base}images/hedefine-ulasti.png`,
+  ogluyla:           `${base}images/ogluyla.png`,
 };
 
 // İlerleme yüzdesine göre ana sayfa görseli
