@@ -26,7 +26,7 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
             <span className="text-2xl">🐼</span>
             <div className="text-left">
               <div className="font-bold text-gray-800 text-base leading-tight">
-                {STUDENT.name} 的 HSK 之旅
+                Pınar'ın HSK Günlüğü
               </div>
               <div className="text-xs text-gray-400 leading-tight">HSK 4 · 5 · 6 Hazırlık</div>
             </div>
