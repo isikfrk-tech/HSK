@@ -1,10 +1,13 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
-import type { HSKLevel, Word } from '../types';
+import type { HSKLevel, Word, WordProgress } from '../types';
 import { allWords, wordsByLevel } from '../data';
 import { useProgress } from '../hooks/useProgress';
 import { STUDENT } from '../config/character';
 
 type WordFilter = 'all' | 'known';
+type WordCount = 10 | 20 | 50 | 'all';
+
+const WORD_COUNT_OPTIONS: WordCount[] = [10, 20, 50, 'all'];
 
 type Status = 'idle' | 'correct' | 'wrong' | 'revealed';
 
@@ -44,10 +47,19 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
+// Aralıklı tekrar: hiç çalışılmamış veya tekrar zamanı geçmiş kelimeler önce gelir.
+// Bilinen (nextReview'i uzak) kelimeler daha geç, sık yanlış yapılanlar daha sık çıkar.
+function reviewPriority(word: Word, progress: Record<string, WordProgress>, now: number): number {
+  const p = progress[word.id];
+  if (!p) return now;
+  return now - p.nextReview;
+}
+
 export function Exercise() {
-  const { progress } = useProgress();
+  const { progress, markKnown, markUnknown } = useProgress();
   const [level, setLevel] = useState<HSKLevel | 'all'>('all');
   const [wordFilter, setWordFilter] = useState<WordFilter>('all');
+  const [wordCount, setWordCount] = useState<WordCount>(20);
   const [started, setStarted] = useState(false);
   const [queue, setQueue] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
@@ -66,19 +78,25 @@ export function Exercise() {
     const pool = wordFilter === 'known'
       ? levelPool.filter(w => progress[w.id]?.known)
       : levelPool;
-    const questions = shuffle(
-      pool.flatMap(w => {
-        const q = buildQuestion(w);
-        return q ? [q] : [];
-      })
-    );
+
+    const now = Date.now();
+    const candidates = pool.flatMap(w => {
+      const q = buildQuestion(w);
+      return q ? [{ word: w, question: q }] : [];
+    });
+    // En çok tekrara ihtiyaç duyan (hiç görülmemiş / tekrar zamanı gelmiş) kelimeler önce.
+    candidates.sort((a, b) => reviewPriority(b.word, progress, now) - reviewPriority(a.word, progress, now));
+
+    const limit = wordCount === 'all' ? candidates.length : Math.min(wordCount, candidates.length);
+    const questions = shuffle(candidates.slice(0, limit)).map(c => c.question);
+
     setQueue(questions);
     setIndex(0);
     setScore({ correct: 0, wrong: 0 });
     setInput('');
     setStatus('idle');
     setStarted(true);
-  }, [level, wordFilter, progress]);
+  }, [level, wordFilter, wordCount, progress]);
 
   const current = queue[index];
   const finished = started && index >= queue.length;
@@ -94,11 +112,13 @@ export function Exercise() {
     if (answer === current.word.chinese) {
       setStatus('correct');
       setScore(s => ({ ...s, correct: s.correct + 1 }));
+      markKnown(current.word.id);
     } else {
       setStatus('wrong');
       setScore(s => ({ ...s, wrong: s.wrong + 1 }));
+      markUnknown(current.word.id);
     }
-  }, [current, input, status]);
+  }, [current, input, status, markKnown, markUnknown]);
 
   const next = useCallback(() => {
     setIndex(i => i + 1);
@@ -116,8 +136,10 @@ export function Exercise() {
   };
 
   const reveal = () => {
+    if (!current) return;
     setStatus('revealed');
     setScore(s => ({ ...s, wrong: s.wrong + 1 }));
+    markUnknown(current.word.id);
   };
 
   const total = score.correct + score.wrong;
@@ -179,6 +201,24 @@ export function Exercise() {
               </span>
             )}
           </button>
+        </div>
+
+        {/* Kelime sayısı */}
+        <p className="text-xs text-gray-400 uppercase tracking-wide mb-2">Kelime Sayısı</p>
+        <div className="flex gap-2 justify-center mb-8">
+          {WORD_COUNT_OPTIONS.map(c => (
+            <button
+              key={c}
+              onClick={() => setWordCount(c)}
+              className={`px-4 py-2 rounded-xl font-semibold text-sm transition-colors ${
+                wordCount === c
+                  ? 'bg-red-600 text-white'
+                  : 'border border-gray-300 text-gray-600 hover:bg-gray-50'
+              }`}
+            >
+              {c === 'all' ? 'Tümü' : c}
+            </button>
+          ))}
         </div>
 
         {wordFilter === 'known' && knownCount === 0 && (

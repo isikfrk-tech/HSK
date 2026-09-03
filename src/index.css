@@ -10,10 +10,16 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Inter', system-ui, sans-serif;
   background-color: #f8fafc;
   color: #1e293b;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 #root {
