@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import type { HSKLevel, Word } from '../types';
-import { allWords, wordsByLevel } from '../data';
 import { useProgress } from '../hooks/useProgress';
+import { useWordLibrary } from '../hooks/useWordLibrary';
+import { isCustomWord, removeCustomWord } from '../hooks/useCustomWords';
 
 interface WordListProps {
   initialLevel?: HSKLevel;
@@ -11,13 +12,17 @@ const levelColors: Record<string, string> = {
   '4': 'bg-blue-100 text-blue-700',
   '5': 'bg-purple-100 text-purple-700',
   '6': 'bg-red-100 text-red-700',
+  '7': 'bg-emerald-100 text-emerald-700',
 };
+
+const levelLabel = (level: HSKLevel) => level === 7 ? 'Kendi Kelimem' : `HSK ${level}`;
 
 function WordCard({ word, showPinyin }: { word: Word; showPinyin: boolean }) {
   const { progress, markKnown, markUnknown } = useProgress();
   const [expanded, setExpanded] = useState(false);
   const [localPinyin, setLocalPinyin] = useState(false);
   const isKnown = progress[word.id]?.known ?? false;
+  const custom = isCustomWord(word.id);
 
   return (
     <div className={`bg-white rounded-xl border p-4 shadow-sm transition-all ${isKnown ? 'border-green-300 bg-green-50' : 'border-gray-200'}`}>
@@ -26,7 +31,7 @@ function WordCard({ word, showPinyin }: { word: Word; showPinyin: boolean }) {
           <div className="flex items-center gap-2 flex-wrap">
             <span className="text-3xl font-medium text-gray-900">{word.chinese}</span>
             <span className={`text-xs px-2 py-0.5 rounded-full font-semibold ${levelColors[String(word.level)]}`}>
-              HSK {word.level}
+              {levelLabel(word.level)}
             </span>
             {isKnown && <span className="text-xs px-2 py-0.5 rounded-full bg-green-100 text-green-700 font-semibold">✓ Öğrenildi</span>}
           </div>
@@ -53,6 +58,15 @@ function WordCard({ word, showPinyin }: { word: Word; showPinyin: boolean }) {
           >
             {isKnown ? '✓ Biliyorum' : 'Öğrendim'}
           </button>
+          {custom && (
+            <button
+              onClick={() => removeCustomWord(word.id)}
+              className="text-xs text-gray-300 hover:text-red-500 transition-colors"
+              title="Kelimeyi sil"
+            >
+              🗑 Sil
+            </button>
+          )}
         </div>
       </div>
 
@@ -87,6 +101,7 @@ export function WordList({ initialLevel }: WordListProps) {
   const [showPinyin, setShowPinyin] = useState(false);
   const [filterKnown, setFilterKnown] = useState<'all' | 'known' | 'unknown'>('all');
   const { progress } = useProgress();
+  const { allWords, wordsByLevel } = useWordLibrary();
 
   const sourceWords = selectedLevel === 'all' ? allWords : wordsByLevel[selectedLevel];
 
@@ -131,8 +146,8 @@ export function WordList({ initialLevel }: WordListProps) {
           onChange={e => setSearch(e.target.value)}
           className="flex-1 border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-red-500"
         />
-        <div className="flex gap-2">
-          {(['all', 4, 5, 6] as const).map(lvl => (
+        <div className="flex gap-2 flex-wrap">
+          {(wordsByLevel[7].length > 0 ? (['all', 4, 5, 6, 7] as const) : (['all', 4, 5, 6] as const)).map(lvl => (
             <button
               key={lvl}
               onClick={() => setSelectedLevel(lvl)}
@@ -140,7 +155,7 @@ export function WordList({ initialLevel }: WordListProps) {
                 selectedLevel === lvl ? 'bg-red-600 text-white' : 'border border-gray-300 text-gray-600 hover:bg-gray-50'
               }`}
             >
-              {lvl === 'all' ? 'Tümü' : `HSK ${lvl}`}
+              {lvl === 'all' ? 'Tümü' : levelLabel(lvl)}
             </button>
           ))}
         </div>

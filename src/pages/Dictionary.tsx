@@ -1,13 +1,16 @@
 import { useState } from 'react';
-import { allWords } from '../data';
-import type { Word } from '../types';
+import { useWordLibrary } from '../hooks/useWordLibrary';
+import type { HSKLevel, Word } from '../types';
 import { STUDENT, IMAGES } from '../config/character';
 
 const levelColors: Record<string, string> = {
   '4': 'bg-blue-100 text-blue-700',
   '5': 'bg-purple-100 text-purple-700',
   '6': 'bg-red-100 text-red-700',
+  '7': 'bg-emerald-100 text-emerald-700',
 };
+
+const levelLabel = (level: HSKLevel) => level === 7 ? 'Kendi Kelimem' : `HSK ${level}`;
 
 function DictEntry({ word }: { word: Word }) {
   const [expanded, setExpanded] = useState(false);
@@ -20,7 +23,7 @@ function DictEntry({ word }: { word: Word }) {
           <div className="flex items-center gap-2 flex-wrap mb-1">
             <span className="text-3xl font-medium text-gray-900">{word.chinese}</span>
             <span className={`text-xs px-2 py-0.5 rounded-full font-semibold ${levelColors[String(word.level)]}`}>
-              HSK {word.level}
+              {levelLabel(word.level)}
             </span>
           </div>
           {showPinyin && (
@@ -60,6 +63,7 @@ function DictEntry({ word }: { word: Word }) {
 export function Dictionary() {
   const [query, setQuery] = useState('');
   const [searchMode, setSearchMode] = useState<'tr' | 'zh'>('tr');
+  const { allWords } = useWordLibrary();
 
   const results = query.length < 1
     ? []

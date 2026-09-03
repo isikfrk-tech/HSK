@@ -1,28 +1,38 @@
 import type { Page, HSKLevel } from '../types';
-import { wordsByLevel } from '../data';
 import { useProgress } from '../hooks/useProgress';
+import { useWordLibrary } from '../hooks/useWordLibrary';
 import { STUDENT, getHomeImage, getHomeMessage } from '../config/character';
 
 interface HomeProps {
   onNavigate: (page: Page, level?: HSKLevel) => void;
 }
 
+const levelTitle: Record<HSKLevel, string> = {
+  4: 'HSK 4',
+  5: 'HSK 5',
+  6: 'HSK 6',
+  7: 'Kendi Kelimelerim',
+};
+
 const levelColors: Record<HSKLevel, string> = {
   4: 'from-blue-500 to-blue-600',
   5: 'from-purple-500 to-purple-600',
   6: 'from-red-500 to-red-600',
+  7: 'from-emerald-500 to-emerald-600',
 };
 
 const levelBg: Record<HSKLevel, string> = {
   4: 'bg-blue-50 border-blue-200',
   5: 'bg-purple-50 border-purple-200',
   6: 'bg-red-50 border-red-200',
+  7: 'bg-emerald-50 border-emerald-200',
 };
 
 export function Home({ onNavigate }: HomeProps) {
   const { getKnownCount } = useProgress();
+  const { wordsByLevel } = useWordLibrary();
 
-  const levels: HSKLevel[] = [4, 5, 6];
+  const levels: HSKLevel[] = wordsByLevel[7].length > 0 ? [4, 5, 6, 7] : [4, 5, 6];
   const totalWords = Object.values(wordsByLevel).reduce((s, w) => s + w.length, 0);
   const totalKnown = getKnownCount(Object.values(wordsByLevel).flatMap(w => w.map(x => x.id)));
   const progressPct = totalWords > 0 ? Math.round((totalKnown / totalWords) * 100) : 0;
@@ -67,7 +77,7 @@ export function Home({ onNavigate }: HomeProps) {
       </div>
 
       {/* Seviye kartları */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <div className={`grid grid-cols-1 sm:grid-cols-2 ${levels.length === 4 ? 'lg:grid-cols-4' : 'md:grid-cols-3'} gap-6 mb-10`}>
         {levels.map(level => {
           const words = wordsByLevel[level];
           const known = getKnownCount(words.map(w => w.id));
@@ -76,7 +86,7 @@ export function Home({ onNavigate }: HomeProps) {
             <div key={level} className={`bg-white rounded-2xl border ${levelBg[level]} overflow-hidden shadow-sm`}>
               <div className={`bg-gradient-to-r ${levelColors[level]} p-5 text-white`}>
                 <div className="text-xs font-semibold uppercase tracking-wider opacity-80">Seviye</div>
-                <div className="text-4xl font-bold mt-1">HSK {level}</div>
+                <div className="text-3xl font-bold mt-1">{levelTitle[level]}</div>
                 <div className="text-sm opacity-90 mt-1">{words.length} kelime</div>
               </div>
               <div className="p-5">

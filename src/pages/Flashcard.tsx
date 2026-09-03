@@ -1,7 +1,7 @@
 import { useState, useCallback, useMemo } from 'react';
 import type { HSKLevel, Word } from '../types';
-import { allWords, wordsByLevel } from '../data';
 import { useProgress } from '../hooks/useProgress';
+import { useWordLibrary } from '../hooks/useWordLibrary';
 import { FloatingCharacter } from '../components/FloatingCharacter';
 import { MotivationCard } from '../components/MotivationCard';
 import { STUDENT, IMAGES, getFlashcardResult } from '../config/character';
@@ -31,10 +31,11 @@ export function Flashcard({ initialLevel }: FlashcardProps) {
   const [showFloating, setShowFloating] = useState(true);
 
   const { progress, markKnown, markUnknown } = useProgress();
+  const { allWords, wordsByLevel } = useWordLibrary();
 
   const sourceWords = useMemo(
     () => selectedLevel === 'all' ? allWords : wordsByLevel[selectedLevel],
-    [selectedLevel]
+    [selectedLevel, allWords, wordsByLevel]
   );
 
   const startSession = useCallback(() => {
@@ -114,7 +115,7 @@ export function Flashcard({ initialLevel }: FlashcardProps) {
           <div>
             <label className="text-sm font-semibold text-gray-600 block mb-2">Seviye</label>
             <div className="flex gap-2 justify-center flex-wrap">
-              {(['all', 4, 5, 6] as const).map(lvl => (
+              {(wordsByLevel[7].length > 0 ? (['all', 4, 5, 6, 7] as const) : (['all', 4, 5, 6] as const)).map(lvl => (
                 <button
                   key={lvl}
                   onClick={() => setSelectedLevel(lvl)}
@@ -122,7 +123,7 @@ export function Flashcard({ initialLevel }: FlashcardProps) {
                     selectedLevel === lvl ? 'bg-red-600 text-white' : 'border border-gray-300 text-gray-600 hover:bg-gray-50'
                   }`}
                 >
-                  {lvl === 'all' ? 'Tümü' : `HSK ${lvl}`}
+                  {lvl === 'all' ? 'Tümü' : lvl === 7 ? 'Kendi Kelimelerim' : `HSK ${lvl}`}
                 </button>
               ))}
             </div>

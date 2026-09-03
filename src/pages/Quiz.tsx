@@ -1,7 +1,7 @@
 import { useState, useCallback, useMemo } from 'react';
 import type { HSKLevel, Word } from '../types';
-import { allWords, wordsByLevel } from '../data';
 import { useProgress } from '../hooks/useProgress';
+import { useWordLibrary } from '../hooks/useWordLibrary';
 import { MotivationCard } from '../components/MotivationCard';
 import { STUDENT, IMAGES, getQuizResult } from '../config/character';
 
@@ -45,10 +45,11 @@ export function Quiz({ initialLevel }: QuizProps) {
   const [wrongAnswers, setWrongAnswers] = useState<Question[]>([]);
 
   const { markKnown, markUnknown } = useProgress();
+  const { allWords, wordsByLevel } = useWordLibrary();
 
   const sourceWords = useMemo(
     () => selectedLevel === 'all' ? allWords : wordsByLevel[selectedLevel],
-    [selectedLevel]
+    [selectedLevel, allWords, wordsByLevel]
   );
 
   const startQuiz = useCallback(() => {
@@ -101,10 +102,10 @@ export function Quiz({ initialLevel }: QuizProps) {
           <div>
             <label className="text-sm font-semibold text-gray-600 block mb-2">Seviye</label>
             <div className="flex gap-2 justify-center flex-wrap">
-              {(['all', 4, 5, 6] as const).map(lvl => (
+              {(wordsByLevel[7].length > 0 ? (['all', 4, 5, 6, 7] as const) : (['all', 4, 5, 6] as const)).map(lvl => (
                 <button key={lvl} onClick={() => setSelectedLevel(lvl)}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${selectedLevel === lvl ? 'bg-red-600 text-white' : 'border border-gray-300 text-gray-600 hover:bg-gray-50'}`}>
-                  {lvl === 'all' ? 'Tümü' : `HSK ${lvl}`}
+                  {lvl === 'all' ? 'Tümü' : lvl === 7 ? 'Kendi Kelimelerim' : `HSK ${lvl}`}
                 </button>
               ))}
             </div>

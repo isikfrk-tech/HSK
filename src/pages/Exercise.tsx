@@ -1,7 +1,7 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import type { HSKLevel, Word, WordProgress } from '../types';
-import { allWords, wordsByLevel } from '../data';
 import { useProgress } from '../hooks/useProgress';
+import { useWordLibrary } from '../hooks/useWordLibrary';
 import { STUDENT } from '../config/character';
 
 type WordFilter = 'all' | 'known';
@@ -57,6 +57,7 @@ function reviewPriority(word: Word, progress: Record<string, WordProgress>, now:
 
 export function Exercise() {
   const { progress, markKnown, markUnknown } = useProgress();
+  const { allWords, wordsByLevel } = useWordLibrary();
   const [level, setLevel] = useState<HSKLevel | 'all'>('all');
   const [wordFilter, setWordFilter] = useState<WordFilter>('all');
   const [wordCount, setWordCount] = useState<WordCount>(20);
@@ -96,7 +97,7 @@ export function Exercise() {
     setInput('');
     setStatus('idle');
     setStarted(true);
-  }, [level, wordFilter, wordCount, progress]);
+  }, [level, wordFilter, wordCount, progress, allWords, wordsByLevel]);
 
   const current = queue[index];
   const finished = started && index >= queue.length;
@@ -158,7 +159,7 @@ export function Exercise() {
         {/* Seviye seçimi */}
         <p className="text-xs text-gray-400 uppercase tracking-wide mb-2">Seviye</p>
         <div className="flex gap-2 justify-center mb-6">
-          {(['all', 4, 5, 6] as const).map(l => (
+          {(wordsByLevel[7].length > 0 ? (['all', 4, 5, 6, 7] as const) : (['all', 4, 5, 6] as const)).map(l => (
             <button
               key={l}
               onClick={() => setLevel(l)}
@@ -168,7 +169,7 @@ export function Exercise() {
                   : 'border border-gray-300 text-gray-600 hover:bg-gray-50'
               }`}
             >
-              {l === 'all' ? 'Tümü' : `HSK ${l}`}
+              {l === 'all' ? 'Tümü' : l === 7 ? 'Kendi Kelimelerim' : `HSK ${l}`}
             </button>
           ))}
         </div>
@@ -299,9 +300,10 @@ export function Exercise() {
           <span className={`text-xs px-2.5 py-1 rounded-full font-semibold ${
             current.word.level === 4 ? 'bg-blue-100 text-blue-700' :
             current.word.level === 5 ? 'bg-purple-100 text-purple-700' :
-            'bg-red-100 text-red-700'
+            current.word.level === 6 ? 'bg-red-100 text-red-700' :
+            'bg-emerald-100 text-emerald-700'
           }`}>
-            HSK {current.word.level}
+            {current.word.level === 7 ? 'Kendi Kelimelerim' : `HSK ${current.word.level}`}
           </span>
           {!answered && (
             <div className="flex gap-2">
@@ -327,7 +329,7 @@ export function Exercise() {
         </div>
 
         {/* Pinyin */}
-        {(showPinyin || answered) && (
+        {(showPinyin || answered) && current.pinyinFull && (
           <div className="text-red-400 text-sm text-center mb-1">
             {answered ? current.pinyinFull : current.pinyin}
           </div>

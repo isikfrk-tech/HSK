@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { Page } from '../types';
+import { AddWordModal } from './AddWordModal';
 
 interface NavbarProps {
   currentPage: Page;
@@ -17,6 +18,7 @@ const navItems: { page: Page; label: string; icon: string }[] = [
 
 export function Navbar({ currentPage, onNavigate }: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [addWordOpen, setAddWordOpen] = useState(false);
 
   const go = (page: Page) => {
     onNavigate(page);
@@ -41,7 +43,7 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
           </button>
 
           {/* Masaüstü menü */}
-          <div className="hidden md:flex gap-1">
+          <div className="hidden md:flex items-center gap-1">
             {navItems.map(item => (
               <button
                 key={item.page}
@@ -56,6 +58,13 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
                 <span>{item.label}</span>
               </button>
             ))}
+            <button
+              onClick={() => setAddWordOpen(true)}
+              className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium border border-red-200 text-red-600 hover:bg-red-50 transition-colors ml-1"
+            >
+              <span>➕</span>
+              <span>Kelime Ekle</span>
+            </button>
           </div>
 
           {/* Mobil menü butonu */}
@@ -88,9 +97,18 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
                 <span>{item.label}</span>
               </button>
             ))}
+            <button
+              onClick={() => { setMenuOpen(false); setAddWordOpen(true); }}
+              className="flex items-center gap-2.5 px-3 py-3 rounded-lg text-sm font-medium text-left text-red-600 hover:bg-red-50 transition-colors"
+            >
+              <span className="text-lg">➕</span>
+              <span>Kelime Ekle</span>
+            </button>
           </div>
         </div>
       )}
+
+      <AddWordModal open={addWordOpen} onClose={() => setAddWordOpen(false)} />
     </nav>
   );
 }

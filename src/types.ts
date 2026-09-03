@@ -1,4 +1,5 @@
-export type HSKLevel = 4 | 5 | 6;
+// 7, HSK'ye ait olmayan, kullanıcının kendi eklediği kelimeler ("Kendi Kelimelerim") için kullanılır.
+export type HSKLevel = 4 | 5 | 6 | 7;
 
 export interface Example {
   chinese: string;
